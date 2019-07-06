@@ -1,0 +1,1123 @@
+IA.ID,IA.Name,IA.Group.1,IA.Group.2,Type,City,Voivodship
+IA00001,“21”,21,NA,Periodical,NA,NA
+IA00002,“ANEKS”,ANEKS,NA,Periodical,NA,NA
+IA00003,“Ar”,AR,NA,Periodical,NA,NA
+IA00004,“Baza”,BAZA,NA,Periodical,NA,NA
+IA00007,“Bis”,BIS,NA,NA,NA,NA
+IA00008,“Biuletynu” KOS,BKOS,NA,NA,NA,NA
+IA00010,“Biuletyn Informacyjny” KOR,BKOR,NA,NA,NA,NA
+IA00011,“Biuletyn Informacyjny” KSS-KOR,BKSS,NA,Periodical,NA,NA
+IA00011,“Biuletyn Informacyjny” KSS-KOR,BKSS,NA,NA,NA,NA
+IA00018,“Biuletynie Wojennym”,BW,NA,NA,NA,NA
+IA00019,“Bratniak”,BRK,NA,NA,NA,NA
+IA00020,“CDN”,CDN,NA,Periodical,NA,NA
+IA00024,“Czytelnik”,CZYT,NA,Periodical,NA,NA
+IA00027,“Dziś i Jutro”,DIJ,NA,Periodical,NA,NA
+IA00028,“Edukacja i Dialog”,EID,NA,NA,NA,NA
+IA00029,“Esculap”,ESC,NA,Periodical,NA,NA
+IA00030,“Express Wieczorny”,EXW,NA,Periodical,NA,NA
+IA00033,“Fantastyce”,FAN,NA,Periodical,NA,NA
+IA00034,“Feniks”,FEN,NA,Periodical,NA,NA
+IA00035,“Fundamenty”,FUN,NA,Periodical,NA,NA
+IA00036,“Gazeta Bankowa”,GBANK,NA,Periodical,NA,NA
+IA00038,“Gazeta Handlowa”,GHAND,NA,Periodical,NA,NA
+IA00040,“Gazety Niecodziennej”,GNIE,NA,NA,NA,NA
+IA00041,“Głos”,GLOS,NA,Periodical,NA,NA
+IA00045,“Głos Nowej Huty”,GNH,NA,Periodical,NA,NA
+IA00049,“Głos Ursusa”,GURS,NA,Periodical,NA,NA
+IA00050,“Głosno”,GLOSNO,NA,Periodical,NA,NA
+IA00051,“Gornik Polski”,GORP,NA,Periodical,NA,NA
+IA00052,“Gościa Niedzielnego”,GIN,NA,Periodical,NA,NA
+IA00054,“Historia”,HIST,NA,Periodical,NA,NA
+IA00055,“Horyzont”,HORY,NA,Periodical,NA,NA
+IA00056,“Hot”,HOT,NA,Periodical,NA,NA
+IA00057,“Hutnik”,HUTN,NA,Periodical,NA,NA
+IA00058,“Idee”,IDEE,NA,Periodical,NA,NA
+IA00059,“Impuls”,IMP,NA,Periodical,NA,NA
+IA00060,“Informacja Solidarności”,INFS,NA,Periodical,NA,NA
+IA00063,“KOS”,KOS,NA,Periodical,NA,NA
+IA00064,“Karta”,KARTA,NA,Periodical,NA,NA
+IA00065,“Krata”,KRATA,NA,Periodical,NA,NA
+IA00066,“Krąg”,KRAG,NA,Periodical,NA,NA
+IA00068,“Królowej Apostołów”,KRA,NA,Periodical,NA,NA
+IA00069,“Krytyka”,KRYT,NA,Periodical,NA,NA
+IA00069,“Krytyka”,KRYT,NA,NA,NA,NA
+IA00070,“Kulisy”,KULI,NA,Periodical,NA,NA
+IA00071,“Kultura”,KULT,NA,Periodical,NA,NA
+IA00073,“Kurier Akademicki”,KURA,NA,Periodical,NA,NA
+IA00074,“Literatura”,LIT,NA,Periodical,NA,NA
+IA00075,“LOSu”,LOSU,NA,NA,NA,NA
+IA00078,“Martwa Natura”,MARN,NA,Periodical,NA,NA
+IA00079,“Mies. Instrukcyjny ZMP”,MIZMP,NA,NA,NA,NA
+IA00081,“Mlody Polak w Niemczech”,MPWN,NA,Periodical,NA,NA
+IA00082,“Moim Zdaniem”,MZ,NA,Periodical,NA,NA
+IA00083,“Most”,MOST,NA,Periodical,NA,NA
+IA00084,“Myśl”,MYSL,NA,Periodical,NA,NA
+IA00086,“Nasze Wiadomości”,NWIA,NA,Periodical,NA,NA
+IA00092,“NTO”,NTO,NA,NA,NA,NA
+IA00093,“Obrona”,OBRO,NA,Periodical,NA,NA
+IA00096,“Opinia”,OPIN,NA,Periodical,NA,NA
+IA00099,“Paragraf”,PARA,NA,Periodical,NA,NA
+IA00100,“Poglądy”,POGL,NA,Periodical,NA,NA
+IA00101,“Pokolenie”,POKO,NA,NA,NA,NA
+IA00102,“Polibuda”,PLBD,NA,Periodical,NA,NA
+IA00103,“Polish Western Affairs”,PWA,NA,NA,NA,NA
+IA00104,“Politechnik”,PTNK,NA,NA,NA,NA
+IA00105,“Polityka”,POLI,NA,Periodical,NA,NA
+IA00106,“Polityka Polska”,POLIP,NA,NA,NA,NA
+IA00107,“Pomost”,POMO,NA,Periodical,NA,NA
+IA00108,“Po Prostu”,POPR,NA,Periodical,NA,NA
+IA00110,“Prawa i Życie”,PIZ,NA,Periodical,NA,NA
+IA00112,“Praworządność”,PRAW,NA,Periodical,NA,NA
+IA00113,“Problemy”,PROB,NA,Periodical,NA,NA
+IA00114,“Przedświt”,PRZED,NA,Periodical,NA,NA
+IA00115,“Przegląd Polityczny”,PRPO,NA,Periodical,NA,NA
+IA00116,“Przegląd Powszechny”,PRPOW,NA,Periodical,NA,NA
+IA00120,“Przegląd Wiadomości Agencyjnych”,PRWA,NA,Periodical,NA,NA
+IA00121,“Przekrój”,PRZJ,NA,Periodical,NA,NA
+IA00122,“PWA”,PWA2,NA,NA,NA,NA
+IA00122,“PWA”,PWA2,NA,Periodical,NA,NA
+IA00124,“Res Publica”,RESP,NA,Periodical,NA,NA
+IA00126,“Robotnik”,ROBO,NA,Periodical,NA,NA
+IA00130,“Rzeczpospolita”,RZPP,NA,Periodical,NA,NA
+IA00131,“Samorządna Rzeczpospolita”,SAMOR,NA,Periodical,NA,NA
+IA00133,“Serwis Informacyna FMW”,SIFMW,NA,Periodical,NA,NA
+IA00134,“Słowo Powszechny”,SLPO,NA,Periodical,NA,NA
+IA00136,“Solidarność”,SOLID,NA,Periodical,NA,NA
+IA00144,“Spotkania”,SPTK,NA,Periodical,NA,NA
+IA00145,“Studia Logika”,STLO,NA,Periodical,NA,NA
+IA00146,“Suma”,SUMA,NA,Periodical,NA,NA
+IA00147,“Swiat”,SWIAT,NA,Periodical,NA,NA
+IA00148,“Sztandar Młodych”,SZML,NA,Periodical,NA,NA
+IA00149,“Tu Teraz”,TUTER,NA,Periodical,NA,NA
+IA00150,“Tygodnik Mazowsze”,TYMAZ,NA,Periodical,NA,NA
+IA00151,“Tygodnik Powszeczny”,TYPOW,NA,NA,NA,NA
+IA00152,“Tygodnik Solidarność”,TYSOL,NA,Periodical,NA,NA
+IA00153,“Tygodnik Wojenny”,TYWOJ,NA,Periodical,NA,NA
+IA00154,“Votun”,VOTU,NA,Periodical,NA,NA
+IA00156,“Wiadomość Dnia”,WIADN,NA,Periodical,NA,NA
+IA00158,“Wielka Gra”,WIEG,NA,NA,NA,NA
+IA00159,“Wiedza i Życie”,WIZ,NA,Periodical,NA,NA
+IA00160,“Wierchy”,WIRC,NA,NA,NA,NA
+IA00161,“Więż”,WIEZ,NA,Periodical,NA,NA
+IA00163,“Wola”,WOLA,NA,Periodical,NA,NA
+IA00164,“Wolna Trybuna”,WOLTR,NA,Periodical,NA,NA
+IA00167,“Wrocławski Tygodnik Katolicki”,WTG,NA,Periodical,NA,NA
+IA00168,“Wybór”,WYBOR,NA,Periodical,NA,NA
+IA00170,“Zak”,ZAK,NA,NA,NA,NA
+IA00171,“Zapis”,ZAPIS,NA,NA,NA,NA
+IA00173,“Zeszytów Naukowych KUL”,ZNKUL,NA,NA,NA,NA
+IA00174,“Zeszytach Lekarskich”,ZESL,NA,NA,NA,NA
+IA00175,“Zeszyty Edukacji Narodowej”,ZESEN,NA,Periodical,NA,NA
+IA00177,“Znak”,ZNAK,NA,Periodical,NA,NA
+IA00180,“Życie Klubów”,ZYKLU,NA,Periodical,NA,NA
+IA00181,“Życie Warszawy”,ZYWAR,NA,Periodical,NA,NA
+IA00182,Academic Pastoral Care,APC,NA,Charitable or Humanitarian Organization,NA,NA
+IA00183,Academic Association “Verbum”,AAV,NA,Independent Society,NA,NA
+IA00184,Academy of Economics Katowice,AEK,NA,Postsecondary School,Katowice,NA
+IA00185,Academy of Fine Arts Warsaw,AFAW,NA,Postsecondary School,Warsaw,NA
+IA00186,Academy of Physical Education Warsaw,APEW,NA,Postsecondary School,Warsaw,NA
+IA00187,Academy of Trade in Poznań,AOT,NA,Postsecondary School,Poznan,NA
+IA00188,Action Program for Solidarność Underground Structures,APSU,NA,Protest Statement,NA,NA
+IA00189,Adam Mickiewicz University,AMU,NA,Postsecondary School,Poznan,NA
+IA00190,Adam Mickiewicz University Faculty of Biology Department of General Zoology,AMU,FBGZ,Postsecondary School,Poznan,NA
+IA00191,Adam Mickiewicz University Faculty of Biology Department of Nature Conservation,AMU,FBNC,Postsecondary School,Poznan,NA
+IA00192,Adam Mickiewicz University Faculty of Law and Administration,AMU,FLA,Postsecondary School,Poznan,NA
+IA00193,Adam Mickiewicz University Faculty of Polish Philology,AMU,FPP,Postsecondary School,Poznan,NA
+IA00194,Adam Mickiewicz University Faculty of Social Sciences Institute of Sociology,AMU,FSSIS,Postsecondary School,Poznan,NA
+IA00195,Adam Mickiewicz University Institute of Art History,AMU,IAH,Postsecondary School,Poznan,NA
+IA00196,Advisor to PZPR First Secretary Gierek,AD1S,NA,Government Leadership Body National,NA,NA
+IA00197,Advisory Council to the President of the Council of State (Jaruzelski),ADCP,NA,NA,NA,NA
+IA00197,Advisory Council to the President of the Council of State (Jaruzelski),ADCP,NA,Government Leadership Body National,NA,NA
+IA00198,Advocate Group Nr 1 Gorzów Wielkopolska,AVG1,NA,Legal Office,NA,NA
+IA00199,Agreement of Independent Scouting Societies and Organizations,AGIS,NA,Protest Statement,NA,NA
+IA00200,Agreement of Brown Coal Mines,AGBC,NA,Political Agreement,NA,NA
+IA00201,AGH Kraków,AGH,NA,Postsecondary School,Krakow,NA
+IA00202,AGH Kraków Faculty of Mining,AGH,FOM,Postsecondary School,Krakow,NA
+IA00203,AGH Kraków Department of Mining Engineering,AGH,DME,Postsecondary School,Krakow,NA
+IA00204,AGH Kraków Department of Organization and Management,AGH,DOM,Postsecondary School,Krakow,NA
+IA00205,AGH Kraków Institute of Geomechanical Mining,AGH,IGM,Postsecondary School,Krakow,NA
+IA00207,Agricultural Foundation Organizing Committee,AFOC,NA,Opposition Group,NA,NA
+IA00208,Akcja Gospodarczej,AKG,NA,Protest Statement,NA,NA
+IA00209,All-Poland Coordinating Committee of Artistic and Scientific Associations,APCC,NA,Independent Society,NA,NA
+IA00210,Alpine Club Polish Tatra Society,ACPT,NA,National Professional Association,NA,NA
+IA00213,Andrzej Małkowski Circle of Scouting Instructors,AMCS,NA,Salon,NA,NA
+IA00214,Apena Electrical Apparatus Factory Bielska-Biały,AEFAC,NA,Factory,Bielska-Biala,NA
+IA00215,Appeal by the 64,A64,NA,Protest Statement,NA,NA
+IA00216,Appeal by the 77 to the Congress of Intellectuals in Warsaw,A77,NA,Protest Statement,NA,NA
+IA00217,Appeal by the 101 to the CSCE Madrid Meeting,A101,NA,Protest Statement,NA,NA
+IA00218,Appeal by the Agreement Committee of the Initiative for Self-Determination of the Nation to conduct free elections to the Sejm,AACIS,NA,Protest Statement,NA,NA
+IA00219,Appeal to the Society and the Authorities in the PRL,ASAPRL,NA,Protest Statement,NA,NA
+IA00220,Appeal to the US Government to Drop Sanctions,AUSDS,NA,Protest Statement,NA,NA
+IA00221,Archbishops Charitable Committee,ACC,NA,Charitable or Humanitarian Organization,NA,NA
+IA00223,Archive of Modern Records,AAN,NA,Research Institue,Warsaw,NA
+IA00224,Army Medical Academy,AMA,NA,Medical Facility,NA,NA
+IA00225,Art Clinic Pomeranian Military District in Bydgoszcz,ARTC,NA,NA,Bydgoszcz,NA
+IA00226,Artistic Architectural Curatorial Commission for Metropolitan Warsaw,AACCW,NA,Government Agency Regional or Local,Warsaw,NA
+IA00227,Artificial Fibers Factory Gorzów Wielkopolska,AFFG,NA,Factory,Gorzow Wielkopolski,Lubusz
+IA00228,Association “Hospicjum”,AH,NA,Independent Society,NA,NA
+IA00229,Association for Scientific Authors,ASA,NA,National Professional Association,NA,NA
+IA00230,Association for the Defense of the Tatr Mountains,ADTM,NA,Independent Society,NA,NA
+IA00231,Association of Academic Catholic Youth,AACY,NA,Independent Society,NA,NA
+IA00232,Association of Activists for Self-Governing Workers,AASGW,NA,Independent Society,NA,NA
+IA00233,Association of Art Historians,AAH,NA,National Professional Association,NA,NA
+IA00234,Association of Authors,ZAIKS,NA,NA,NA,NA
+IA00234,Association of Authors,ZAIKS,NA,National Professional Association,NA,NA
+IA00235,Association of Catholic Youth “Revival”,ACYR,NA,Independent Society,NA,NA
+IA00238,Association of Freedom and Independence,WIN,NA,Opposition Group,NA,NA
+IA00239,Association of the Free University of Poland,AFUP,NA,Independent Society,NA,NA
+IA00240,Association of Polish Architects,SARP,NA,National Professional Association,NA,NA
+IA00241,Association of Polish Artists and Designers,ZPAP,NA,National Professional Association,NA,NA
+IA00243,Association of Polish Journalists,SDP,NA,National Professional Association,NA,NA
+IA00244,Association of Polish Urban Planners,TUP,NA,National Professional Association,NA,NA
+IA00245,Association of Polish Youth,ZMP,NA,Independent Society,NA,NA
+IA00246,Association of Private Metalworkers,APM,NA,National Professional Association,NA,NA
+IA00247,Association of Rural Youth,ZMW,NA,Independent Society,NA,NA
+IA00248,Association of Rural Youth Ecological Commission,ZMW,EC,Independent Society,NA,NA
+IA00251,Association of Silesian Church Helpers,ASCH,NA,Independent Society,NA,NA
+IA00252,Association of Socialist Youth,ZMS,NA,Independent Society,NA,NA
+IA00254,Association PAX,APAX,NA,Political Party,NA,NA
+IA00255,Attorneys Joint Office No. 1 in Wodzisław Słąski,AJO1,NA,Legal Office,NA,NA
+IA00259,Basic Objectives of the Polish Opposition Signatory,BOPO,NA,Protest Statement,NA,NA
+IA00260,Białogard Electrical-Mechanical Technical School,BEMT,NA,Postsecondary School,NA,NA
+IA00261,Bicycle Factory Premot Romet Bydgoszcz,BFPR,NA,Factory,Bydgoszcz,NA
+IA00262,Bielsko-Biały High School for Workers,BBHSW,NA,High School,Bielska-Biala,NA
+IA00263,Bielsko-Biała Municipal House of Culture,BBMHC,NA,Government Agency Regional or Local,Bielska-Biala,NA
+IA00264,Bishop of Katowices Social Council,BKSC,NA,Charitable or Humanitarian Organization,Katowice,NA
+IA00265,Bishops Committee for the Needy Kielce,BCNK,NA,Charitable or Humanitarian Organization,Kielce,NA
+IA00267,Bolesław High School for Adults Sopot,BHSA,NA,High School,Sopot,NA
+IA00268,Brotherhood of the Oblates of St. Bridget,BOSB,NA,Charitable or Humanitarian Organization,Gdańsk,NA
+IA00269,Bureau for the Project of Building Nowa Huta,BPBNH,NA,Government Agency Regional or Local,Nowa Huta,NA
+IA00270,Bureau of Construction Projects Gdańsk Shipyards,BCPG,NA,Government Agency Regional or Local,Gdańsk,NA
+IA00271,Bureau of Light Industry Design,BLID,NA,Government Leadership Body National,NA,NA
+IA00272,Bureau of Transport Design,BTD,NA,Government Leadership Body National,NA,NA
+IA00273,Car Repair Plant in Wałbrzych,CRPW,NA,Factory,Walbrych,NA
+IA00274,Caritas Academica Warsaw,CAW,NA,Charitable or Humanitarian Organization,Warsaw,NA
+IA00275,Cardinal Stefan Wyszyński Catholic Workers University in Kraków,CWCWU,NA,Postsecondary School,Krakow,NA
+IA00283,Catholic Youth Academic Association “Soli Deo”,CYASD,NA,Charitable or Humanitarian Organization,NA,NA
+IA00285,Center for Cooperative Housing Construction Associations Warsaw,CCHCW,NA,Government Agency Regional or Local,NA,NA
+IA00286,Center for Civil Legislative Issues Solidarność,CCLIS,NA,Opposition Group Research Center,NA,NA
+IA00287,Center for Documentation and the Study of Society,CDSS,NA,Government Agency Regional or Local,NA,NA
+IA00288,Center for Occupational Medicine Warsaw,COMW,NA,Research Institue,Warsaw,NA
+IA00290,Center for Postgraduate Medical Education Department of Social Welfare and Rehabilitation,CPME,DSWR,Postsecondary School,NA,NA
+IA00291,Center for Postgraduate Medical Education Clinic of Hematology and Immunology,CPME,CHI,Postsecondary School,NA,NA
+IA00294,Center for Research and Analysis,CRA,NA,Research Institue,NA,NA
+IA00295,Center for Research and Development in Computer Science,CRDCS,NA,Research Institue,NA,NA
+IA00298,Center of Polish Culture Paris,CPCP,NA,Polish Diaspora Group,NA,NA
+IA00299,Central School of Planning and Statistics,SGPIS,NA,Postsecondary School,NA,NA
+IA00301,Central School of Planning and Statistics Department of Economic Management,SGPIS,DEM,Postsecondary School,NA,NA
+IA00302,Central School of Planning and Statistics Institute of Basic Trade Problems,SGPIS,IBTP,Postsecondary School,NA,NA
+IA00303,Central School of Trade Warsaw,SGH,NA,Postsecondary School,NA,NA
+IA00304,Central School of Trade Warsaw Department of Economic Research on Foreign Trade,SGH,DERFT,Postsecondary School,NA,NA
+IA00305,Central School of Trade Warsaw Institute of Prices and Economic Trends in Foreign Trade,SGH,IPET,Postsecondary School,NA,NA
+IA00306,Central Statistical Office,GUS,NA,Government Leadership Body National,NA,NA
+IA00307,Charitable Commission of St. Brigitte Church Gdańsk,CCSTG,NA,Charitable or Humanitarian Organization,NA,NA
+IA00308,Charter of Workers Rights,CWR,NA,NA,NA,NA
+IA00309,Chemitex-Stilon Plant Fibers Chemical Plant in Gorzów Wielkapolska,CSPFC,NA,Factory,NA,NA
+IA00311,Christian Culture Weeks Lubin,CCWL,NA,Charitable or Humanitarian Organization,NA,NA
+IA00312,Christian Culture Weeks,CCW,NA,Charitable or Humanitarian Organization,NA,NA
+IA00314,Church Committee for Agriculture,CCA,NA,Charitable or Humanitarian Organization,NA,NA
+IA00316,Citizens Initiative Group,CIG,NA,Independent Society,NA,NA
+IA00317,Citizens Committee,CITCOM,NA,Opposition Group Leadership Body National,NA,NA
+IA00317,Citizens Committee,CITCOM,NA,NA,NA,NA
+IA00318,Citizens Committee Against Violence,CCAV,NA,Independent Society,NA,NA
+IA00319,City Construction Conglomerate Unit Warsaw,CCCUW,NA,Government Agency Regional or Local,NA,NA
+IA00320,City Hospital Gliwice,CHG,NA,Medical Facility,NA,NA
+IA00321,Club for Contradiction Seekers,CCS,NA,Salon,NA,NA
+IA00322,Club for Economic Initiatives,CEI,NA,Salon,NA,NA
+IA00324,Club of the Crooked Circle,CCC,NA,Salon,NA,NA
+IA00325,Coastal Free Trade Unions,CFTU,NA,Opposition Group,NA,NA
+IA00326,Coastal Free Trade Unions Factory Council Elmore,CFTU,FCE,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00327,Coast Labor Council,CLC,NA,Opposition Group Meeting,NA,NA
+IA00329,Commandos,COMM,NA,Opposition Group,NA,NA
+IA00330,Committee for Social Trust,CST,NA,Independent Society,NA,NA
+IA00331,Committee of International Critics of Architecture,CICA,NA,International Professional Association,NA,NA
+IA00332,Committee of Social Resistance,KOS,NA,NA,NA,NA
+IA00332,Committee of Social Resistance,KOS,NA,Opposition Group,NA,NA
+IA00333,Committee for Independent Culture,CINC,NA,Independent Society,NA,NA
+IA00334,Committee to Aid Arrestees,CAA,NA,Charitable or Humanitarian Organization,NA,NA
+IA00335,Commission for the Realization of the Rzeszow-Ustrycki Agreement,CRRUA,NA,Opposition Group,NA,NA
+IA00336,Communication Equipment Factory Okęcie,CEFO,NA,Factory,NA,NA
+IA00337,Confederation for an Independent Poland,KPN,NA,Opposition Group,NA,NA
+IA00338,Conference of Rectors,COR,NA,Government Leadership Body National,NA,NA
+IA00339,Congress of Polish Culture,CPC,NA,Meeting,NA,NA
+IA00341,Consortium of Independent Publishers,CIP,NA,Publishing House,NA,NA
+IA00342,Consulting Engineers Bureau “Hydroprojekt”,CEPH,NA,NA,NA,NA
+IA00344,Coordinating Committee for Health Services Małopolska,CCHSM,NA,Government Agency Regional or Local,NA,NA
+IA00345,Coordinating Committee for Health Services Solidarność,CCHSS,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00347,Copernicus University Faculty of Astronomy,KU,FAST,Postsecondary School,NA,NA
+IA00348,Copernicus University Faculty of Fine Arts,KU,FFA,Postsecondary School,NA,NA
+IA00349,Copernicus University Faculty of Law,KU,FLAW,Postsecondary School,NA,NA
+IA00350,Copernicus University Faculty of Mathematics and Natural Sciences,KU,FMNS,Postsecondary School,NA,NA
+IA00351,Copernicus University Humanities Faculty,KU,FHUM,Postsecondary School,NA,NA
+IA00352,Copper Mining and Smelting Plant Lubin,CMSPL,NA,Factory,NA,NA
+IA00353,Copper Mining and Smelting Plant Lubin ZG Rudna,CMSPL,ZGR,Factory,NA,NA
+IA00354,Copper Mining and Smelting Plant Lubin ZG Cuprum,CMSPL,ZGC,Factory,NA,NA
+IA00355,Council of the Fund for Scholarship Assistance,CFSA,NA,Independent Society,NA,NA
+IA00356,Council of Ministers Housing Bureau,CM,HB,Government Leadership Body National,NA,NA
+IA00357,Council of Ministers Planning Commission,CM,PC,Government Leadership Body National,NA,NA
+IA00359,Council of National Education,CNE,NA,Government Leadership Body National,NA,NA
+IA00360,Council of State,COS,NA,Government Leadership Body National,NA,NA
+IA00361,Cultural Committee for the Mazowsze Region,CCMR,NA,Independent Society,NA,NA
+IA00364,Czerniakowski Hospital Warsaw,CZHW,NA,Medical Facility,Warsaw,NA
+IA00365,Declaration of Ideology,DI,NA,Protest Statement,NA,NA
+IA00366,Declaration of Service Clubs for Independence,DSCI,NA,Protest Statement,NA,NA
+IA00367,Declaration of the Circle of Friends of the Polish-Czechoslovak Solidarity,DCFPCS,NA,Protest Statement,NA,NA
+IA00368,Declaration of the Democratic Movement,DDM,NA,Protest Statement,NA,NA
+IA00369,Declaration of the Student Movement,DSM,NA,Protest Statement,NA,NA
+IA00370,Democratic Party,SD,NA,Political Party,NA,NA
+IA00371,Demonstration Cadre,DC,NA,Opposition Group,NA,NA
+IA00373,Department of the Western Polish Union,DWPU,NA,Government Agency Regional or Local,NA,NA
+IA00374,Diocesan Assistance Committee Gornów Wielkopolska,DACGW,NA,Charitable or Humanitarian Organization,NA,NA
+IA00375,Diocesan Assistance Committee Żielona Gora,DACZG,NA,Charitable or Humanitarian Organization,NA,NA
+IA00376,Diocesan Pastoral Care for Farmers,DPCF,NA,Charitable or Humanitarian Organization,NA,NA
+IA00377,Directorate for the Construction of Workers’ Villages Warsaw,DCWVW,NA,Government Agency Regional or Local,NA,NA
+IA00378,Discussion club Clan of the Burning Tomato,DCCBT,NA,Salon,NA,NA
+IA00379,Discussion Seminar “Experience and Future”,DSEF,NA,NA,NA,NA
+IA00380,District Board of Mining in Wrocław,DBMW,NA,Government Agency Regional or Local,NA,NA
+IA00381,District Court Judge Warsaw,DCJW,NA,Legal Office,NA,NA
+IA00382,District Prosecutor's Office in Szczecin,DPOS,NA,Legal Office,NA,NA
+IA00383,District Thermal Energy Enterprise in Bytom,DTEEB,NA,Factory,NA,NA
+IA00384,District Water and Sewers Company Szczecin,DWSCS,NA,Factory,NA,NA
+IA00385,Dziekania Political Thought Club,DPTC,NA,Salon,NA,NA
+IA00387,Ecological Committee for the Gdańsk Region,ECGR,NA,Independent Society,NA,NA
+IA00389,Electronic Apparatus Plant “Ema-Elester”,EAPEE,NA,Factory,NA,NA
+IA00390,European Society of Physics,ESP,NA,NA,NA,NA
+IA00391,European Association of Medical Sociology,EAMS,NA,International Professional Association,NA,NA
+IA00393,Factory Committee Solidarność Bełchatów Teachers,FCBT,NA,Protest Action,NA,NA
+IA00396,Factory Committee Solidarność Chemitex-Stilon Plant Fibers Chemical Plant,FCCSPF,NA,Protest Action,NA,NA
+IA00397,Factory Committee Solidarność Gdańsk University,FCGU,NA,Protest Action,NA,NA
+IA00398,Faculty Committee Solidarność Gdańsk University Faculty of Mathematics Physics and Chemistry,FCGUFMP,NA,Protest Action,NA,NA
+IA00399,Factory Committee Solidarność Gdyńia Sea Fisheries Institute,FCGSFI,NA,Protest Action,NA,NA
+IA00400,Factory Committee Solidarność Healthcare Group in Gliwice,FCHGG,NA,Protest Action,NA,NA
+IA00401,Factory Committee Solidarność Institute of Planning Warsaw,FCIPW,NA,Protest Action,NA,NA
+IA00402,Factory Committee Solidarność Institute of Pedagogical Research,FCIPR,NA,Protest Action,NA,NA
+IA00404,Factory Committee Solidarność Julian Marchlewski Textile Factory Łódź,FCJMT,NA,Protest Action,NA,NA
+IA00405,Factory Committee Solidarność KWK Andaluzja,FCKWKA,NA,Protest Action,NA,NA
+IA00406,Factory Committee Solidarność KWK Manifest Lipcowy,FCKWKM,NA,Protest Action,NA,NA
+IA00407,Factory Committee Solidarność Lenin Shipyards Gdańsk,FCLSG,NA,Protest Action,NA,NA
+IA00408,Factory Committee Solidarność Medical Academy Gdańsk,FCMAG,NA,Protest Action,NA,NA
+IA00409,Factory Committee Solidarność Medical Academy Kraków,FCMAK,NA,Protest Action,NA,NA
+IA00410,Factory Committee Solidarność Medical Academy Poznań,FCMAP,NA,Protest Action,NA,NA
+IA00411,Factory Committee Solidarność Mining and Steelworks Plant “Bolesław” in Bukowny,FCMSPB,NA,Protest Action,NA,NA
+IA00412,Factory Committee Solidarność Mining Construction Company East-Łęchna,FCMCCE,NA,Protest Action,NA,NA
+IA00413,Factory Committee Solidarność Ministry of Justice,FCMOJ,NA,Protest Action,NA,NA
+IA00414,Factory Committee Solidarność National Geologic Institute Warsaw,FCNGIW,NA,Protest Action,NA,NA
+IA00415,Factory Committee Solidarność PAN Institute of Fundamental Technological Research,FCPIFTR,NA,Protest Action,NA,NA
+IA00416,Factory Committee Solidarność Radio and Television Committee,FCRTC,NA,Protest Action,NA,NA
+IA00417,Factory Committee Solidarność Radom,FCR,NA,Protest Action,NA,NA
+IA00418,Factory Committee Solidarność Small Vehicle Factory Bielsko-Biały,FCSVFB,NA,Protest Action,NA,NA
+IA00420,Factory Committee Solidarność Ursus Mechanical Factory,FCUMF,NA,Protest Action,NA,NA
+IA00422,Factory Committee Solidarność Warsaw Steelworks Workers,FCWSW,NA,Protest Action,NA,NA
+IA00423,Factory Committee Solidarność Warsaw Television Works,FCWTW,NA,Protest Action,NA,NA
+IA00424,Factory Committee Solidarność Warsaw University,FCWU,NA,Protest Action,NA,NA
+IA00425,Factory Committee Solidarność Warsaw University Faculty of Law and Administration,FCWUFLA,NA,Protest Action,NA,NA
+IA00427,Factory Committee Solidarność Warski Shipyards Szczecin,FCWSS,NA,Protest Action,NA,NA
+IA00428,Factory Committee Solidarność Wrocław Polytechnic Institute of Mining,FCWPIM,NA,Protest Action,NA,NA
+IA00429,Factory Committee Solidarność Youth Publishing Agency,FCYPA,NA,Protest Action,NA,NA
+IA00430,Fajsławice Commune,FCOM,NA,Government Agency Regional or Local,NA,NA
+IA00431,Fajsławice Municipal Council,FMC,NA,Government Agency Regional or Local,NA,NA
+IA00432,Farmers Cooperative and Agricultural Technical School Żary,FCATC,NA,NA,NA,NA
+IA00433,Farmers Solidarity National Council,FS,NC,Opposition Group Leadership Body National,NA,NA
+IA00434,Farmers Solidarity Temporary National Council,FS,TNC,Opposition Group Leadership Body National,NA,NA
+IA00436,Federation of Fighting Youth,FFY,NA,Opposition Group,NA,NA
+IA00437,Federation of Fighting Youth National Coordinating Committee,FFY,NCC,Opposition Group Leadership Body National,NA,NA
+IA00438,Federation of Associations of Catholic Press of the International Union of Catholic Press Organizations,FACP,NA,Publishing House,NA,NA
+IA00439,Felix Dzerzhinsky Plant Fibers Chemical Plant in Tarnów,FDPFC,NA,Factory,NA,NA
+IA00440,Fighting Solidarity,SWAL,NA,Opposition Group,NA,NA
+IA00441,Fire Fighter Szczecin,FFS,NA,Factory,NA,NA
+IA00442,First International Conference on Human Rights Kraków,FIHRK,NA,Conference or Meeting,NA,NA
+IA00444,First Solidarność National Congress Delegate,FSNCD,NA,Opposition Group Meeting,NA,NA
+IA00445,Fisheries Enterprise and Fishing Services KOGA in Hel,FEFSK,NA,Factory,NA,NA
+IA00446,Fisheries Enterprise and Fishing Services ARKA in Gdyńia,FEFSA,NA,Factory,NA,NA
+IA00447,Flying Library,FL,NA,Independent Society,NA,NA
+IA00448,Flying University,FU,NA,Independent Society,NA,NA
+IA00449,Forecasting Center for Research Development of Information Technology,FRDIT,NA,NA,NA,NA
+IA00450,Founding Committee Solidarność at KWB Bełchatów,FCMKB,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00451,Founding Committee Workers Solidarność Stalowa Wola Steelworks,FCMWSW,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00453,Founding Organizational Committee Solidarność Northern Shipyards Gdańsk,FOCNSG,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00454,Foundation for Independent Publishing Social Council,FIPSC,NA,Independent Society,NA,NA
+IA00456,Free University Workers,FUW,NA,Opposition Group,NA,NA
+IA00457,Gdańsk Academic Association,GAA,NA,Independent Society,Gdańsk,NA
+IA00458,Gdańsk Agreement signatory,GAGRS,NA,Political Agreement,Gdańsk,NA
+IA00459,Gdańsk Association of Scientists,GAS,NA,Independent Society,Gdańsk,NA
+IA00460,Gdańsk Citizens Initiative,GCI,NA,Independent Society,Gdańsk,NA
+IA00462,Gdańsk Construction Mechanization Plant ZREMB,GCMF,NA,Factory,Gdańsk,NA
+IA00463,Gdańsk “Elektromantaż”,GELE,NA,Factory,Gdańsk,NA
+IA00465,Gdańsk Political Society “Young Poland”,GPSYP,NA,Opposition Group,Gdańsk,NA
+IA00466,Gdańsk Strikes 1980 Supporter,GDST80,NA,Protest Action,Gdańsk,NA
+IA00467,Gdańsk Polytechnic,GPOLY,NA,Postsecondary School,Gdańsk,NA
+IA00468,Gdańsk Polytechnic Faculty of Chemistry,GPOLY,FOCH,Postsecondary School,Gdańsk,NA
+IA00469,Gdańsk Polytechnic Faculty of Marine Building,GPOLY,FOMB,Postsecondary School,Gdańsk,NA
+IA00470,Gdańsk Polytechnic Foundation for Energy Conservation,GPOLY,FFEC,Postsecondary School,Gdańsk,NA
+IA00471,Gdańsk Polytechnic Institute of Architecture and Urban Planning,GPOLY,IAC,Postsecondary School,Gdańsk,NA
+IA00472,Gdańsk Polytechnic Institute of Shipbuilding,GPOLY,ISHIP,Postsecondary School,Gdańsk,NA
+IA00473,Gdańsk Publishing House,GPUB,NA,Publishing House,Gdańsk,NA
+IA00474,Gdańsk Regional Appeal Commission re Work,GRAC,NA,Government Agency Regional or Local,Gdańsk,NA
+IA00475,Gdańsk Shipyards,GSHIP,NA,Factory,Gdańsk,NA
+IA00477,Gdańsk University Humanities Division,GU,DHUM,Postsecondary School,Gdańsk,NA
+IA00478,Gdańsk University Department of Economics and Foreign Trade,GU,DECON,Postsecondary School,Gdańsk,NA
+IA00480,Gdańsk University Department of General Physics,GU,DGPH,Postsecondary School,Gdańsk,NA
+IA00481,Gdańsk University Department of Labor Law,GU,DLL,Postsecondary School,Gdańsk,NA
+IA00482,Gdańsk University Faculty of Law and Administration,GU,FLA,Postsecondary School,Gdańsk,NA
+IA00484,Gdańsk University Circle of Historical Research,GU,CHIST,Postsecondary School,Gdańsk,NA
+IA00485,Gdynia Sea Fisheries Institute,GSFI,NA,Research Institue,Gdynia,NA
+IA00487,Głos Publishing House,GLOS,NA,Publishing House,NA,NA
+IA00488,Government Commission on Economic Reform in Poland,GCER,NA,Government Leadership Body National,NA,NA
+IA00490,Governmental Commission of Experts on Improving Control System Investments,GCEIC,NA,Government Leadership Body National,NA,NA
+IA00492,Group for Independent Education,GIE,NA,Independent Society,NA,NA
+IA00493,Group of Political Journalists,GPJ,NA,Independent Society,NA,NA
+IA00494,Health Care Group in Gliwice,HCG,NA,Medical Facility,Gliwice,NA
+IA00495,Healthcare Complex Downtown Wrocław,HCDW,NA,Medical Facility,Wroclaw,NA
+IA00496,Healthcare Complex for Higher Education Wrocław,HCHEW,NA,Medical Facility,Wroclaw,NA
+IA00497,Help for Victims of the Płock Flood,HVPF,NA,Charitable or Humanitarian Organization,NA,NA
+IA00498,Higher School of Agriculture Poznań,HSAP,NA,Postsecondary School,Poznan,NA
+IA00500,Higher School of Economics Katowice,HSEK,NA,Postsecondary School,Katowice,NA
+IA00501,Higher School of Economics Łódź,HSEL,NA,Postsecondary School,Lodz,NA
+IA00502,Higher School of Economics Poznań,HSEP,NA,Postsecondary School,Poznan,NA
+IA00503,Higher School of Economics Sopot,HSES,NA,Postsecondary School,Sopot,NA
+IA00504,Higher School of Economics Sopot Faculty of the Sea,HSES,FOTS,Postsecondary School,Sopot,NA
+IA00505,Higher School of Maritime Trade,HSMT,NA,Postsecondary School,NA,NA
+IA00506,Higher School of Pedagogy Gdańsk,HSPG,NA,Postsecondary School,Gdańsk,NA
+IA00507,Higher School of Pedagogy Katowice,HSPKA,NA,Postsecondary School,Katowice,NA
+IA00508,Higher School of Pedagogy Kielce,HSPKI,NA,Postsecondary School,Kielce,NA
+IA00509,Higher School of Special Pedagogy,HSSP,NA,Postsecondary School,NA,NA
+IA00510,Higher School of Rocket and Artillery Officers,HSRAO,NA,Postsecondary School,NA,NA
+IA00512,Horticultural Technical College in Sochaczew,HTCS,NA,Postsecondary School,Socharew,NA
+IA00513,Home Army,AK,NA,Paramilitary Group,NA,NA
+IA00514,Horse Rallies in Memory of the Heroes of September 1939,HRMHS,NA,Independent Society,NA,NA
+IA00515,Hospital of the Infant Jesus Warsaw Department of Internal Medicine,HJW,DIM,Medical Facility,Warsaw,NA
+IA00516,Ideological Declaration of Republic Clubs Freedom-Justice-Independence,IDRC,NA,Protest Statement,NA,NA
+IA00517,Independent Movement for Health,IMH,NA,Independent Society,NA,NA
+IA00519,Independent Scouting,IS,NA,Scouting Organization,NA,NA
+IA00520,Independent Scouting publishing house,ISPUB,NA,Scouting Organization,NA,NA
+IA00521,Independent Union of Agricultural Producers,IUAP,NA,Opposition Group,NA,NA
+IA00522,Independent Union of Socialist Youth,ZNMS,NA,Independent Society,NA,NA
+IA00523,Institute for Building,IB,NA,Research Institue,NA,NA
+IA00524,Institute for Nuclear Research,INR,NA,Research Institue,NA,NA
+IA00525,Institute for Nuclear Research Department of Radiobiology and Healthcare,INR,DRH,Research Institue,NA,NA
+IA00527,Institute of Electrical and Electronics Engineers,IEEE,NA,Research Institue,NA,NA
+IA00528,Institute of Electron Technology Warsaw,IETW,NA,Research Institue,NA,NA
+IA00529,Institute of General Chemistry Warsaw,IGCW,NA,Research Institue,NA,NA
+IA00530,Institute of Hematology Clinic of Internal Medicine,IHCIM,NA,Research Institue,NA,NA
+IA00531,Institute of Immunology and Experimental Therapy Wrocław,IIETW,NA,Research Institue,NA,NA
+IA00532,Institute of Judicial Legal Research,IJLR,NA,Research Institue,NA,NA
+IA00533,Institute of Labor and Social Policy,ILSP,NA,Research Institue,NA,NA
+IA00535,Institute of Pedagogical Research,IPR,NA,Research Institue,NA,NA
+IA00536,Institute of Planning Warsaw,IPW,NA,NA,NA,NA
+IA00536,Institute of Planning Warsaw,IPW,NA,Research Institue,NA,NA
+IA00537,Institute of Planning and Planning Commission,IPPC,NA,Research Institue,NA,NA
+IA00538,Institute of the Market and Consumption,IMC,NA,Research Institue,NA,NA
+IA00541,Institute of Synthetic and Artificial Fibers Gorzów Wielkopolska,ISAFG,NA,Research Institue,NA,NA
+IA00542,Institute of Urban Planning and Architecture Warsaw,IUPAW,NA,Research Institue,NA,NA
+IA00543,Institute of the West Poznań,IWP,NA,Research Institue,NA,NA
+IA00547,Interned Arłamow,INT,ARLM,Protest Action,NA,NA
+IA00548,Interned Białołęka,INT,BIAL,Protest Action,NA,NA
+IA00549,Interned Goleniów,INT,GOLE,Protest Action,NA,NA
+IA00550,Interned Jastrzębie,INT,JAST,Protest Action,NA,NA
+IA00551,Interned Wierzchowie Pomorski,INT,WIPO,Protest Action,NA,NA
+IA00553,Inter-factory Coordinating Committee for Solidarność Youth,MKSSY,NA,Protest Action,NA,NA
+IA00554,Inter-factory Coordinating Committee Solidarność in Olkusz,MKSSO,NA,Protest Action,NA,NA
+IA00555,Inter-factory Strike Committee Bydgoszcz,MKSB,NA,Protest Action,NA,NA
+IA00556,Inter-factory Strike Committee Jastrzębia,MKSJ,NA,Protest Action,NA,NA
+IA00557,Inter-factory Strike Committee Katowice Steel Works,MKSK,NA,Protest Action,NA,NA
+IA00558,Inter-factory Strike Committee Wrocław,MKSW,NA,Protest Action,NA,NA
+IA00559,Inter-factory Strike Committee Gdańsk,MKSG,NA,Protest Action,NA,NA
+IA00560,Inter-factory Strike Committee Gdańsk Committee of Experts,MKSG,COE,Protest Action,NA,NA
+IA00561,Inter-factory Strike Committee Gdańsk Shipyards (August 1988),MKSG88,NA,Protest Action,NA,NA
+IA00562,Inter-factory Strike Committee KWK July Manifesto (August 1988),MKSGJM,NA,NA,NA,NA
+IA00563,Inter-factory Strike Committee Nysa,MKSN,NA,Protest Action,NA,NA
+IA00564,Inter-factory Strike Committee Szczecin Shipyards,MKSS,NA,Protest Action,NA,NA
+IA00565,Inter-factory Strike Committee Szczecin (August 1988),MKSS88,NA,NA,NA,NA
+IA00568,Inter-factory Founding Committee Bydgoszcz,MKZBY,NA,Protest Action,NA,NA
+IA00569,Inter-factory Founding Committee Gdańsk,MKZG,NA,Protest Action,NA,NA
+IA00570,Inter-factory Founding Committee Katowice,MKZKA,NA,Protest Action,NA,NA
+IA00571,Inter-factory Founding Committee Kielce,MKZKI,NA,Protest Action,NA,NA
+IA00572,Inter-factory Founding Committee Łódź,MKZL,NA,Protest Action,NA,NA
+IA00573,Inter-factory Founding Committee Małopolska,MKZML,NA,Protest Action,NA,NA
+IA00574,Inter-factory Founding Committee Mazowsze,MKZMA,NA,Protest Action,NA,NA
+IA00575,Inter-factory Founding Committee Pozńan,MKZP,NA,Protest Action,NA,NA
+IA00577,Inter-factory Founding Committee Stalowa Wola,MKZST,NA,Protest Action,NA,NA
+IA00578,Inter-factory Founding Committee Wałbrych,MKZWA,NA,Protest Action,NA,NA
+IA00579,Inter-factory Founding Committee Wrocław,MKZWR,NA,Protest Action,NA,NA
+IA00582,Inter-factory Workers Committee Solidarność Lubin,MKPL,NA,Protest Action,NA,NA
+IA00583,Inter-factory Workers Committee Solidarność,MKPS,NA,Protest Action,NA,NA
+IA00584,Inter-Union Group,IUG,NA,Protest Action,NA,NA
+IA00587,International Labor Union Geneva,ILO,GEN,International Professional Association,NA,NA
+IA00588,International Labor Union Office Warsaw,ILO,WAW,International Professional Association,NA,NA
+IA00589,International Association of Ergonomics,IAE,NA,International Professional Association,NA,NA
+IA00591,Inwestprojekt Plant Investment Services Project Warsaw,IPISP,NA,Factory,NA,NA
+IA00592,Iskra Bearing Factory Center for Research and Development,IBFCRD,NA,Research Institue,NA,NA
+IA00594,Jagiellonian University Faculty of Agriculture,UJ,FAG,Postsecondary School,NA,NA
+IA00596,Jagiellonian University Faculty of Indo-Iranian Philology,UJ,FIIP,Postsecondary School,NA,NA
+IA00597,Jagiellonian University Faculty of Law,UJ,FOL,Postsecondary School,NA,NA
+IA00598,Jagiellonian University Faculty of Law Department of Criminal Law,UJ,FOLDCL,Postsecondary School,NA,NA
+IA00600,Jagiellonian University Faculty of Philosophy and History,UJ,FPH,Postsecondary School,NA,NA
+IA00601,Jagiellonian University Faculty of Polish Philology,UJ,FPP,Postsecondary School,NA,NA
+IA00602,Jagiellonian University Library,UJ,LIB,Postsecondary School,NA,NA
+IA00603,Jagiellonian University Physics Institute,UJ,PHIN,Postsecondary School,NA,NA
+IA00605,Jagiellonian University Institute of Sociology,UJ,ISOC,Postsecondary School,NA,NA
+IA00606,Jan Kasprowicz High School in Inowrocław,JKHS,NA,High School,NA,NA
+IA00607,Jan Rabinowski Railway Technical College of the Ministry of Transportation Warsaw,MINTR,JRRTC,High School,NA,NA
+IA00608,Jan Zamoyski High School Warsaw,JZHS,NA,High School,NA,NA
+IA00609,Jewish Historical Institute,JHI,NA,Research Institue,NA,NA
+IA00610,Joachim Lelewel High School Warsaw,JLHS,NA,High School,NA,NA
+IA00611,July Manifesto Strike (08/1988),JULYM,NA,NA,NA,NA
+IA00612,Katowice Steel Works Dąbrowa,KSWD,NA,Factory,NA,NA
+IA00613,Katyn Committee,KATCOM,NA,Independent Society,NA,NA
+IA00614,Kazimierz the Great “Puszcza” Scout Troop Niepołomice,KGST,NA,Scouting Organization,NA,NA
+IA00615,Kielce Diocese Legal Council,KDLC,NA,Charitable or Humanitarian Organization,NA,NA
+IA00616,Kielce District Court,KDC,NA,Legal Office,NA,NA
+IA00617,Kielce Provincial Sanitary-Epidemiological Station,KPSEP,NA,Medical Facility,Kielce,NA
+IA00618,KIK Gdańsk,KIK,GD,Salon,NA,NA
+IA00619,KIK Kraków,KIK,KR,Salon,NA,NA
+IA00620,KIK Lubin,KIK,LUB,Salon,NA,NA
+IA00622,KIK Nowy Sącz,KIK,NS,Salon,NA,NA
+IA00624,KIK Warsaw,KIK,WAW,Salon,NA,NA
+IA00625,KOR Collaborator,KOR,NA,Opposition Group,NA,NA
+IA00626,KSS-KOR Collaborator,KSSKOR,NA,Opposition Group,NA,NA
+IA00627,KSS-KOR Intervention Committee,KSSKOR,IC,Opposition Group Leadership Body National,NA,NA
+IA00629,Kraków Polytechnic,KPOLY,NA,Postsecondary School,NA,NA
+IA00630,KWB Bełchatów,KWBB,NA,Factory,NA,NA
+IA00631,KWB Bełchatów August 1988 Strike,KWBB,A88,Protest Action,NA,NA
+IA00632,KWB Bełchatów May 1988 Strike,KWBB,M88,Protest Action,NA,NA
+IA00633,KWK Andaluzja,KWKA,NA,Factory,NA,NA
+IA00634,KWK Andaluzja Strike August 1988,KWKA,A88,Protest Action,NA,NA
+IA00635,KWK Lenin May 1988 Strike,KWKL,M88,Protest Action,NA,NA
+IA00636,KWK “Manifest Lipcowy”,KWKML,NA,Factory,NA,NA
+IA00637,KWK “May 1” Jatrzębie,KWKM1,NA,Factory,NA,NA
+IA00638,KWK Miechowice Bytom,KWKMB,NA,Factory,NA,NA
+IA00639,KWK “Rozbark” Bytom,KWKRB,NA,NA,NA,NA
+IA00640,KWK “Thirtieth Anniversary of the PRL” Pniówek,KWK13,NA,Factory,NA,NA
+IA00642,KWK “Ziemowit”,KWKZ,NA,NA,NA,NA
+IA00643,Laboratory of Geology and Mining in Lubin,LGM,NA,Research Institue,NA,NA
+IA00646,League of Freedom Fighters - ZBoWiD,ZBOWID,NA,NA,NA,NA
+IA00647,Lech Bądkowski Gdańsk Political Club,LBGPC,NA,Salon,NA,NA
+IA00648,Lech Wałęsa advisor,LWAD,NA,Opposition Group Leadership Body National,NA,NA
+IA00649,Lenin Shipyards Gdańsk,LSYG,NA,Factory,NA,NA
+IA00650,Lenin Shipyards Gdańsk December 1970 Strikes,LSYG,D70,Protest Action,NA,NA
+IA00651,Lenin Shipyards Gdańsk Office of Projects and Construction,LSYG,OPC,Factory,NA,NA
+IA00652,Lenin Shipyards Gdańsk May 1988 Strikes,LSYG,M88,Protest Action,NA,NA
+IA00653,Lenin Shipyards Gdańsk August 1988 Strikes,LSYG,A88,Protest Action,NA,NA
+IA00654,Lenin Steelworks Nowa Huta,LSWNH,NA,Factory,NA,NA
+IA00655,Lenin Steelworks Nowa Huta Strike May 1988,LSWNH,M88,Protest Action,NA,NA
+IA00656,Letter in the Name of Solidarność in Response to John Paul II Second Pilgrimage,LRJP2,NA,Protest Statement,NA,NA
+IA00657,Letter in Defense of KOR,LDKOR,NA,Protest Statement,NA,NA
+IA00658,Letter in Defense of the Kowalczyk Brothers,LDKB,NA,Protest Statement,NA,NA
+IA00659,Letter in Support of Adam Michnik,LSAM,NA,NA,NA,NA
+IA00660,Letter in Support of Workers at Radom and Ursus,LSRU,NA,Protest Statement,NA,NA
+IA00661,Letter to the Sejm about a Commission on the Strikes of 1976,LSCS76,NA,Protest Statement,NA,NA
+IA00662,Letter Signed by 7,LET7,NA,Protest Statement,NA,NA
+IA00663,Letter Signed by 8 calling for the suspension of Martial Law,LET8,NA,Protest Statement,NA,NA
+IA00665,Letter Signed by 34,LET34,NA,Protest Statement,NA,NA
+IA00666,Letter Signed by 59,LET59,NA,Protest Statement,NA,NA
+IA00667,Letter Signed by 101,LET101,NA,Protest Statement,NA,NA
+IA00668,Letter Signed by 218 People from Warsaw and Łódź Against Proposed Changes to the PRL Constitution,LET218,NA,Protest Statement,NA,NA
+IA00669,Lighting Equipment Plant POLAM Gdańsk,ZSOPOLAM,NA,Factory,NA,NA
+IA00670,Lipno Basic Vocational School,LBVS,NA,Postsecondary School,NA,NA
+IA00671,Literary Institute Paris,DOMLIT,NA,NA,NA,NA
+IA00672,Local Government/Self-Government Forums,LGSG,NA,Independent Society,NA,NA
+IA00674,Lwow Polytechnic,LPOLY,NA,Postsecondary School,NA,NA
+IA00675,Ludwika Rydygier Hospital Wrocław,LRH,NA,Medical Facility,Wroclaw,NA
+IA00676,Łochochin State Mechine Center,LSMC,NA,Medical Facility,NA,NA
+IA00677,Łódź Chemical Industry Headquarters,LCIH,NA,Research Institue,NA,NA
+IA00679,Łódź Defenders of Peace Industrial Cotton Factory,LDPIC,NA,Factory,NA,NA
+IA00680,Łódź Industrial Institute of Occupational Medicine,LIIOM,NA,Research Institue,NA,NA
+IA00681,Łódź Municipal Retail Trade Office,LMRT,NA,Government Agency Regional or Local,NA,NA
+IA00683,Łódź University,LU,NA,Postsecondary School,NA,NA
+IA00684,Łódź University Department of Civil Law,LU,DCL,Postsecondary School,NA,NA
+IA00685,Łódź University Department of the Science of Morality,LU,DSM,Postsecondary School,NA,NA
+IA00686,Łódź University Department of Theory for Strengthening the Economy,LU,DTSE,Postsecondary School,NA,NA
+IA00687,Łódź University Department of Urban Economic Planning,LU,DUEP,Postsecondary School,NA,NA
+IA00688,Łódź University Faculty of Humanities Sociology Institute,LU,FOHSI,Postsecondary School,NA,NA
+IA00689,Łódź University Faculty of Pedagogy,LU,FOPED,Postsecondary School,NA,NA
+IA00690,Łódź University Faculty of Law and Economics,LU,FOLE,Postsecondary School,NA,NA
+IA00691,Łódź University Faculty of Socio-Economics,LU,FOSE,Postsecondary School,NA,NA
+IA00692,Łódź University Institute of Political Economy,LU,IPE,Postsecondary School,NA,NA
+IA00695,Main Center for Research on Standardization,MCRS,NA,Research Institue,NA,NA
+IA00696,Mainstream Independence,MAINI,NA,Independent Society,NA,NA
+IA00697,March 1981 Bydgoszcz Strike participant,MR81B,PART,Protest Action,NA,NA
+IA00698,March 1981 Bydgoszcz Strike negotiator,MR81B,NEG,Protest Action,NA,NA
+IA00699,March 1968 Student Protests Kraków,MR68,KR,Protest Action,NA,NA
+IA00700,March 1968 Student Protests Łódź supporter,MR68,LDZ,Protest Action,NA,NA
+IA00701,March 1968 Student Protests Poznań,MR68,POZ,Protest Action,NA,NA
+IA00702,March 1968 Student Protests Wrocław,MR68,WROC,Protest Action,NA,NA
+IA00703,March 1968 Student Protests Warsaw,MR68,WAW,Protest Action,NA,NA
+IA00707,Marine Electrical Equipment and Automation Plant Elmore,MEEAP,NA,Factory,NA,NA
+IA00708,Mass for the Fatherland,MFATH,NA,Independent Society,NA,NA
+IA00709,May 1988 Student Protests Gdańsk University,MY68,GU,Protest Action,NA,NA
+IA00710,May 3 Constitution Political Thought Club Gdańsk,MY3PTC,NA,Salon,NA,NA
+IA00711,Mazowsze General Assembly,MAZGA,NA,Government Agency Regional or Local,NA,NA
+IA00713,Medical Academy Gdańsk,MEDAG,NA,Postsecondary School,NA,NA
+IA00714,Medical Academy Gdańsk Department of Biochemistry,MEDAG,DBIO,Postsecondary School,NA,NA
+IA00715,Medical Academy Gdańsk Department of Physiological Chemistry,MEDAG,DPC,Postsecondary School,NA,NA
+IA00716,Medical Academy Gdańsk General Surgery Clinic,MEDAG,GSC,Postsecondary School,NA,NA
+IA00717,Medical Academy Gdańsk Institute of Internal Medicine,MEDAG,IIM,Postsecondary School,NA,NA
+IA00718,Medical Academy Gdańsk Mental Health Clinic,MEDAG,MHC,Postsecondary School,NA,NA
+IA00719,Medical Academy Kraków,MEDAK,NA,Postsecondary School,NA,NA
+IA00721,Medical Academy Kraków Department of Medical Pathophysiology,MEDAK,DMP,Postsecondary School,NA,NA
+IA00723,Medical Academy Łódź,MEDAL,NA,Postsecondary School,NA,NA
+IA00725,Medical Academy Poznań Pediatrics Institute,MEDAP,PI,Postsecondary School,NA,NA
+IA00726,Medical Academy Poznań Regional Liaison Committee with Scientists,MEDAP,RLCS,Postsecondary School,NA,NA
+IA00727,Medical Academy Poznań,MEDAP,NA,Postsecondary School,NA,NA
+IA00728,Medical Academy Warsaw,MEDAW,NA,Postsecondary School,NA,NA
+IA00729,Medical Academy Warsaw Student Government,MEDAW,SG,Postsecondary School,NA,NA
+IA00730,Medical Academy Wrocław Faculty of Medicine,MEDAWR,FOMED,Postsecondary School,NA,NA
+IA00731,Medical Academy Wrocław,MEDAWR,NA,Postsecondary School,NA,NA
+IA00732,Medical Academy Wrocław Internal Medicine Clinic,MEDAWR,IMC,Postsecondary School,NA,NA
+IA00733,Meetings of Warsaw University Young Workers – illegal 1966-1968,MWUYW,NA,NA,NA,NA
+IA00734,Meetings of a Religious Environment for Lawyers in Laski,MREL,NA,Independent Society,NA,NA
+IA00735,Member of Parliament,MOP,NA,NA,NA,NA
+IA00736,Metropolitan Sanitary-Epidemiological Station,MSES,NA,Medical Facility,NA,NA
+IA00737,Middle Vocational School Łódź,MVSL,NA,High School,NA,NA
+IA00738,Międzylesie Primary School,MPS,NA,High School,NA,NA
+IA00739,Miners Committee Solidarność Copper Mining and Smelting Plant Lubin,MCSCM,NA,Protest Action,NA,NA
+IA00740,Miners Solidarność National Committee advisor,MNRSO,NCA,Opposition Group Leadership Body National,NA,NA
+IA00741,Miners Solidarność National Committee,MNRSO,NC,Opposition Group Leadership Body National,NA,NA
+IA00742,Miners Trade Union,MNRTU,NA,Opposition Group,NA,NA
+IA00743,Mining and Steelworks Plant “Bolesław” in Bukowny,MSPB,NA,Factory,NA,NA
+IA00744,Mining Works Łęczna,MWL,NA,NA,NA,NA
+IA00745,Ministry of Culture and Art,MINCA,NA,Government Leadership Body National,NA,NA
+IA00746,Ministry of Culture and Art Institute of Culture,MINCA,IOC,Government Leadership Body National,NA,NA
+IA00747,Ministry of Education Program Committee (Biology),MINED,PCB,Government Leadership Body National,NA,NA
+IA00749,Ministry of Education Negotiations on Teaching History,MINED,NTH,Government Leadership Body National,NA,NA
+IA00750,Ministry of Education Negotiations on Changes in the Curriculum and the Teachers Charter,MINED,NCCTC,Government Leadership Body National,NA,NA
+IA00753,Ministry of Environmental Protection and Natural Resources Ecology Council,MINENV,EC,Government Leadership Body National,NA,NA
+IA00754,Ministry of Finance,MINF,NA,Government Leadership Body National,NA,NA
+IA00755,Ministry of Finance Institute of Finance,MINF,IF,Government Leadership Body National,NA,NA
+IA00756,Ministry of Health and Social Welfare Group of Experts to Reform the Functionality of Health Care and Social Care,MINHSW,GERFHC,Government Leadership Body National,NA,NA
+IA00757,Ministry of Health and Social Welfare,MINHSW,NA,Government Leadership Body National,NA,NA
+IA00758,Ministry of Health Professional Inspection Committee,MINHSW,PIC,Government Leadership Body National,NA,NA
+IA00759,Ministry of Justice,MINJUS,NA,Government Leadership Body National,NA,NA
+IA00760,Ministry of Labor Center for Staff Training and Improvement,MINLAB,CSTI,Government Leadership Body National,NA,NA
+IA00761,Ministry of Labor and Social Welfare,MINLAB,NA,Government Leadership Body National,NA,NA
+IA00763,Ministry of Religious Denominations and and Public Education Department of Denominations,MINRD,DODEN,Government Leadership Body National,NA,NA
+IA00764,Ministry of Science Technology and Higher Education Intercollegiate Department of Higher Education Research,MINED,IDHER,Government Leadership Body National,NA,NA
+IA00765,Ministry of the Treasury,MINTY,NA,Government Leadership Body National,NA,NA
+IA00766,Moderation and Work Movement,MWM,NA,Independent Society,NA,NA
+IA00767,Movement of School Youth,MSY,NA,Independent Society,NA,NA
+IA00768,Movement of School Youth National Founding Committee,MSY,NFC,Independent Society,NA,NA
+IA00769,Movement for National Sobriety,MNSOB,NA,Independent Society,NA,NA
+IA00770,Municipal Hospital in Brzeg,MHB,NA,Medical Facility,NA,NA
+IA00771,MURATOR Cooperative,MURAT,NA,Factory,NA,NA
+IA00772,National Coordinating Committee of Agricultural Institutes,NCCAGI,NA,Opposition Group Leadership Body National,NA,NA
+IA00774,National Coordinating Committee for Health Service Workers Solidarność,NCCHSW,NA,Opposition Group Leadership Body National,NA,NA
+IA00775,National Festival of Polish Singing in Opole,NFPS,NA,Independent Society,NA,NA
+IA00776,National Committee of Resistance of Farmers,NCROF,NA,Opposition Group Leadership Body National,NA,NA
+IA00777,National Council of Economic Planning,NATCEP,NA,Government Leadership Body National,NA,NA
+IA00779,National Farmers Pilgrimage to Jasna Gora,NFPJG,NA,Independent Society,NA,NA
+IA00780,National Geologic Institute Warsaw,NGIW,NA,Research Institue,NA,NA
+IA00781,National Museum Kraków,NMUSK,NA,Research Institue,NA,NA
+IA00782,National Progressive Club of Catholic Intelligentsia,NPCCI,NA,Independent Society,NA,NA
+IA00783,National Unity Front National Committee,NUNF,NC,Opposition Group Leadership Body National,NA,NA
+IA00784,National Section of Engineers and Water Managers,NSEWM,NA,National Professional Association,NA,NA
+IA00785,National Water Authority,NWA,NA,Government Leadership Body National,NA,NA
+IA00786,Network of Leading Plant Works,NLPW,NA,Government Leadership Body National,NA,NA
+IA00788,Northern Shipyards Gdańsk,NSHIPG,NA,Factory,NA,NA
+IA00789,NOWa Publishing House,NOWA,NA,Publishing House,NA,NA
+IA00790,NSZZ Individual Farmers “Solidarity” advisor,NSZZIF,AD,Opposition Group Leadership Body National,NA,NA
+IA00791,NSZZ Individual Farmers “Solidarity” National Founding Committee,NSZZIF,NFC,Opposition Group Leadership Body National,NA,NA
+IA00792,NSZZ Individual Farmers “Solidarity” National Strike Committee,NSZZIF,NSC,Opposition Group Leadership Body National,NA,NA
+IA00793,NSZZ Individual Farmers “Solidarity” National Center for Studies and Experts,NSZZIF,NCSE,Opposition Group Leadership Body National,NA,NA
+IA00795,NSZZ Individual Farmers “Solidarity” Provincial Board Skierniewicz,NSZZIF,PBSK,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00796,NSZZ Individual Farmers “Solidarity” Provincial Board Szczecin,NSZZIF,PBSZ,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00797,NSZZ Individual Farmers “Solidarity” Provincial Board Warsaw,NSZZIF,PBWAW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00799,NSZZ Individual Farmers “Solidarity” Temporary Coordinating Committee,NSZZIF,TKK,Opposition Group Leadership Body National,NA,NA
+IA00800,NSZZ Individual Farmers “Solidarity” Wojewod Founding Committee Zielona Gora,NSZZIF,WFCZG,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00801,NSZZ Scientific Technical and Educational Workers,NSZZST,PNTIO,Opposition Group,NA,NA
+IA00802,NSZZ Solidarność Advisor,NSZZS,AD,Opposition Group Leadership Body National,NA,NA
+IA00803,NSZZ Solidarność All-Poland Liaison Committee with Scientists,NSZZS,APLCS,Opposition Group Leadership Body National,NA,NA
+IA00804,NSZZ Solidarność All-Poland Liaison Committee with PAN,NSZZS,APLCP,Opposition Group Leadership Body National,NA,NA
+IA00805,NSZZ Solidarność Center for Information and Consultation in Pozńan,NSZZS,CICP,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00806,NSZZ Solidarność Commission for National Understanding,NSZZS,KKP,Opposition Group Leadership Body National,NA,NA
+IA00807,NSZZ Solidarność Commission for Intervention and the Rule of Law,NSZZS,CIRL,Opposition Group Leadership Body National,NA,NA
+IA00808,NSZZ Solidarność Committee for Steelworkers,NSZZS,CSTW,Opposition Group Leadership Body National,NA,NA
+IA00809,NSZZ Solidarność Committee for Steelworkers Lenin Steelworks,NSZZS,CSTWL,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00810,NSZZ Solidarność Committee for the Defense of Prisoners of Conscience,NSZZS,KOWZP,Opposition Group Leadership Body National,NA,NA
+IA00811,NSZZ Solidarność Commission Branch in the Department of Transportation Dołowy,NSZZS,CBDTD,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00812,NSZZ Solidarność Workers Committee Lenin Steel Works,NSZZS,WCLSW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00813,NSZZ Solidarność Coordinating Committee Medical Academy Poznań,NSZZS,CCMEDAP,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00814,NSZZ Solidarność Coordinating Committee Podbieskidzie,NSZZS,CCPOD,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00815,NSZZ Solidarność Executive Committee Ministry of Justice,NSZZS,ECMINJUS,Opposition Group Leadership Body National,NA,NA
+IA00816,NSZZ Solidarność Executive Committee District Mining office in Katowice,NSZZS,ECDMOK,NA,NA,NA
+IA00817,NSZZ Solidarność Executive Committee Commission for Investigating Nazi Crimes,NSZZS,ECCINC,Opposition Group Leadership Body National,NA,NA
+IA00818,NSZZ Solidarność Educational Experts Group,NSZZS,EEG,Opposition Group Leadership Body National,NA,NA
+IA00819,NSZZ Solidarność Founding Committee BUMAR Mechanical Equipment Plant,NSZZS,FCBUMAR,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00821,NSZZ Solidarność Founding Committee Center for Postgraduate Medical Education,NSZZS,FCPME,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00822,NSZZ Solidarność Founding Committee Center for Occupational Medicine Warsaw,NSZZS,FCOMW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00825,NSZZ Solidarność Founding Committee Gdynia Sea Fisheries Institute,NSZZS,FCGSFI,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00826,NSZZ Solidarność Founding Committee Health Care Group in Gliwice,NSZZS,FCHGG,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00827,NSZZ Solidarność Founding Committee Healthcare Complex for Higher Education Wrocław,NSZZS,FCHCHEW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00828,NSZZ Solidarność Founding Committee Institute of Pedagogical Research,NSZZS,FCIPR,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00829,NSZZ Solidarność Founding Committee Institute of Labor and Social Policy,NSZZS,FCILSP,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00830,NSZZ Solidarność Founding Committee ISKRA Research and Development Center Kielce,NSZZS,FCISKRA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00831,NSZZ Solidarność Founding Committee Katowice Steelworks,NSZZS,FCKSW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00834,NSZZ Solidarność Founding Committee Lenin Shipyards Gdańsk,NSZZS,FCLSHIG,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00835,NSZZ Solidarność Founding Committee Lenin Steelworks,NSZZS,FCLSTEEL,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00837,NSZZ Solidarność Founding Committee Medical Academy Poznań,NSZZS,FCMEDAP,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00838,NSZZ Solidarność Founding Committee Mining Works Łęczna,NSZZS,FCMWL,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00839,NSZZ Solidarność Founding Committee Mining and Steelworks Plant “Bolesław” in Bukowny,NSZZS,FCBOLE,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00840,NSZZ Solidarność Founding Committee Nysa Factory for Research Support,NSZZS,FCNYSA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00841,NSZZ Solidarność Founding Committee Warsaw Ochota Municipal Hospital,NSZZS,FCWOMH,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00842,NSZZ Solidarność Founding Committee Warsaw Television Works,NSZZS,FCWTW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00843,NSZZ Solidarność Founding Committee Ministry of Justice,NSZZS,FCMINJUS,NA,NA,NA
+IA00844,NSZZ Solidarność Founding Committee Northern Shipyards Gdańsk,NSZZS,FCNSHIG,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00845,NSZZ Solidarność Founding Committee PAN Kraków,NSZZS,FCPANK,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00846,NSZZ Solidarność Founding Committee Stalowa Wola Steelworks,NSZZS,FCSWST,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00847,NSZZ Solidarność Founding Committee State Clinical Hospital No. 4 Warsaw,NSZZS,FCSCH4,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00848,NSZZ Solidarność Founding Committee Szczecin Port Authority,NSZZS,FCSZPA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00850,NSZZ Solidarność Founding Committee Youth Publishing Agency,NSZZS,FCYPA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00851,NSZZ Solidarność Founding Committee of the Workers' Houses of Culture,NSZZS,FCWHC,NA,NA,NA
+IA00852,NSZZ Solidarność Founding Committee ZAE “Ema-Elester”,NSZZS,FCZAE,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00853,NSZZ Solidarność Founding Committee ZSO POLAM Gdańsk,NSZZS,FCZSO,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00854,NSZZ Solidarność Bydgoszcz Regional Organizing Committee,NSZZS,BYROC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00856,NSZZ Solidarność Bydgoszcz Regional Coordinating Committee,NSZZS,BYRCC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00857,NSZZ Solidarność Gdańsk Regional Board,NSZZS,GKRB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00858,NSZZ Solidarność Gdańsk Regional Coordinating Committee,NSZZS,GKRCC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00860,NSZZ Solidarność Jastrębia-Zdroju Regional Executive Committee,NSZZS,JZREC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00861,NSZZ Solidarność Katowice Regional Board,NSZZS,KARB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00862,NSZZ Solidarność Katowice Regional Coordinating Committee,NSZZS,KARCC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00864,NSZZ Solidarność Katowice Regional Executive Committee,NSZZS,KAREC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00866,NSZZ Solidarność Lower Silesia Regional Coordinating Committee for Healthcare,NSZZS,LSRCCH,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00867,NSZZ Solidarność Lower Silesia Regional Executive Committee,NSZZS,LSREC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00868,NSZZ Solidarność Lower Silesia Regional Executive Committee Center for Social Research,NSZZS,LSRECSR,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00869,NSZZ Solidarność Lower Silesia Region,NSZZS,LSREG,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00870,NSZZ Solidarność Łódź Regional Board,NSZZS,LZRB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00871,NSZZ Solidarność Łódź Regional Executive Committee,NSZZS,LZREC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00872,NSZZ Solidarność Łódź Regional Organizing Committee,NSZZS,LZROC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00873,NSZZ Solidarność Member,NSZZS,MEMB,Opposition Group,NA,NA
+IA00874,NSZZ Solidarność Małopolska Regional Board,NSZZS,MPRB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00875,NSZZ Solidarność Małopolska Regional Executive Board,NSZZS,MPREB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00876,NSZZ Solidarność Małopolska/Kraków Regional Committee,NSZZS,MKRC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00877,NSZZ Solidarność Mazowsze Regional Board,NSZZS,MARB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00878,NSZZ Solidarność Mazowsze Regional Board Center for Education and Learning,NSZZS,MARBCEL,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00879,NSZZ Solidarność Mazowsze Regional Board Center for Social Research,NSZZS,MARBESR,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00880,NSZZ Solidarność Mazowsze Regional Coordinating Committee for Healthcare,NSZZS,MARCCH,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00881,NSZZ Solidarność Mazowsze Regional Executive Commission,NSZZS,MAREC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00882,NSZZ Solidarność Podbieskidzie Regional Board Presidium,NSZZS,PBRBP,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00883,NSZZ Solidarność Podbieskidzie Regional Organizing Committee,NSZZS,PBROC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00884,NSZZ Solidarność Piotrków Regional Board,NSZZS,PIRB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00885,NSZZ Solidarność Rzeszów Structures,NSZZS,RZS,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00886,NSZZ Solidarność Sandomierz Regional Board,NSZZS,SANRB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00887,NSZZ Solidarność Szczecin Regional Board,NSZZS,SZRB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00891,NSZZ Solidarność Silesia-Dąbrowski Regional Consultative Committee,NSZZS,SDRCC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00892,NSZZ Solidarność Silesia-Dąbrowski Regional Executive Committee,NSZZS,SDREC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00894,NSZZ Solidarność Torun Regional Executive Committee,NSZZS,TOREC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00895,NSZZ Solidarność Torun Regional Coordinating Commission,NSZZS,TORCC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00897,NSZZ Solidarność Wielkopolska Regional Board,NSZZS,WPRB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00898,NSZZ Solidarność Wielkopolska Temporary Regional Council,NSZZS,WPTRC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00899,NSZZ Solidarność Wielkopolska Temporary Regional Board,NSZZS,WPTRB,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00900,NSZZ Solidarność Western Pomerania Coordinating Commission,NSZZS,WPCC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00902,NSZZ Solidarność Secret Factory Committee Jagiellonian University,NSZZS,SFCUJ,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00903,NSZZ Solidarność Secret Factory Committee PAN Institute of Fundamental Technological Research,NSZZS,SFCPANIFT,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00905,NSZZ Solidarność National Commission Center for Socio-Union Studies,NSZZS,KKCSUS,Opposition Group Leadership Body National,NA,NA
+IA00906,NSZZ Solidarność National Audit Committee,NSZZS,NAC,Opposition Group Leadership Body National,NA,NA
+IA00907,NSZZ Solidarność National Executive Commission,NSZZS,KKW,Opposition Group Leadership Body National,NA,NA
+IA00908,NSZZ Solidarność National Coordinating Committee for Healthcare,NSZZS,NCCH,Opposition Group Leadership Body National,NA,NA
+IA00910,NSZZ Solidarność National Committee,NSZZS,KK,Opposition Group Leadership Body National,NA,NA
+IA00911,NSZZ Solidarność National Committee Presidium,NSZZS,KKPR,Opposition Group Leadership Body National,NA,NA
+IA00912,NSZZ Solidarność National Committee Delegate on the Higher Education Law,NSZZS,KKDHEL,Opposition Group Leadership Body National,NA,NA
+IA00913,NSZZ Solidarność National Coordinating Committee for Science,NSZZS,NCCS,Opposition Group Leadership Body National,NA,NA
+IA00914,NSZZ Solidarność Office of Lech Walęsa,NSZZS,OLW,Opposition Group Leadership Body National,NA,NA
+IA00915,NSZZ Solidarność Organizational Committee Main Center for the Research and Design of Open Pit Mining “Poltegor”,NSZZS,OCMCRDOP,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00916,NSZZ Solidarność Organizational Committee Opole Industrial Construction Enterprise No. 1 Management Works,NSZZS,OCOICE1,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00917,NSZZ Solidarność Organizing Committee Ursus Mechanical Factory,NSZZS,OCUMF,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00918,NSZZ Solidarność Press Information Bureau,NSZZS,PIB,Opposition Group Leadership Body National,NA,NA
+IA00919,NSZZ Solidarność Regional Strike Committee Lower Silesia Social Audit Commission,NSZZS,RSCLSSAC,Protest Action,NA,NA
+IA00920,NSZZ Solidarność Social Fund,NSZZS,SOCFUN,Opposition Group Leadership Body National,NA,NA
+IA00921,NSZZ Solidarność Strike Committee Gdańsk Shipyards (April 1988),NSZZS,SCGDSAP88,Protest Action,NA,NA
+IA00922,NSZZ Solidarność Strike Committee Gdańsk Shipyards (August 1988),NSZZS,SCGDSA88,Protest Action,NA,NA
+IA00923,NSZZ Solidarność Temporary Board of the Środkowo-Wschodni Region (Lubliń),NSZZS,TBSWR,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00926,NSZZ Solidarność Temporary Coordinating Commission,NSZZS,TKK,Opposition Group Leadership Body National,NA,NA
+IA00927,NSZZ Solidarność Temporary Council,NSZZS,TR,Opposition Group Leadership Body National,NA,NA
+IA00928,NSZZ Solidarność Temporary Factory Committee Institute of Pedagogical Research,NSZZS,TFCIPR,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00929,NSZZ Solidarność Temporary Factory Committee Warsaw Television Works,NSZZS,TFCWTW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00930,NSZZ Solidarność Temporary Factory Committee Warsaw University,NSZZS,TFCUW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00931,NSZZ Solidarność Temporary Factory Committee KWK Andaluzja,NSZZS,TFCKWKA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00932,NSZZ Solidarność Temporary Factory Committee Lenin Shipyards Gdańsk,NSZZS,TFCPLSGD,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00933,NSZZ Solidarność Temporary Factory Committee PAN Institute of History,NSZZS,TFCPANIH,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00934,NSZZ Solidarność Temporary Factory Committee Small Vehicle Factory Bialsko-Biały,NSZZS,TFCSMVF,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00935,NSZZ Solidarność Temporary Factory Committee Ursus Mechanical Factory,NSZZS,TFCUMF,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00937,NSZZ Solidarność Temporary Factory Committee State Clinical Hospital No. 4 Warsaw,NSZZS,TFCH4W,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00938,NSZZ Solidarność Temporary Factory Committee Medical Academy Poznań,NSZZS,TFCMEDAP,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00939,NSZZ Solidarność Temporary Presidium of the Commission for National Understanding,NSZZS,TPRKKP,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00942,NSZZ Solidarność Temporary Regional Board Sląsk Opole,NSZZS,TRBSO,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00943,NSZZ Solidarność Temporary Workers Council Warsaw Steelworks,NSZZS,TWCWS,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00944,NSZZ Solidarność University Extension Workers Mazowsze,NSZZS,UEWM,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00945,NSZZ Solidarność Workers Council Warsaw Steelworks,NSZZS,WCWS,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00946,NSZZ Solidarność Workers Strike Committee Lower Silesia,NSZZS,WSCLS,Protest Action,NA,NA
+IA00947,NZS,NZS,NA,Opposition Group,NA,NA
+IA00948,NZS Intercollegiate Coordinating Commission,NZS,ICC,Opposition Group Leadership Body National,NA,NA
+IA00949,NZS Intercollegiate Coordinating Commission Gdańsk,NZS,ICCGK,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00950,NZS Intercollegiate Coordinating Commission Warsaw,NZS,ICCWAW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00951,NZS National Audit Commission,NZS,NAC,Opposition Group Leadership Body National,NA,NA
+IA00952,NZS National Coordinating Commission,NZS,NCC,Opposition Group Leadership Body National,NA,NA
+IA00954,NZS University Committee Gdańsk University,NZS,UCGU,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00955,NZS University Committee Jagiellonian University,NZS,UCUJ,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00956,NZS University Committee Medical Academy Gdańsk,NZS,UCMEDAG,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00957,NZS University Committee State Higher School of Fine Arts Gdańsk,NZS,UCSHSFA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00958,NZS University Committee Warsaw Politechnic,NZS,UCWPOLY,NA,NA,NA
+IA00959,NZS University Committee Warsaw University,NZS,UCUW,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00959,NZS University Committee Warsaw University,NZS,UCUW,NA,NA,NA
+IA00960,NZS University Committee Warsaw Academy of Medicine,NZS,UCWAM,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00961,NZS University Committee Wrocław,NZS,UCWR,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00962,Nysa Factory for Research Support,NYSA,NA,Factory,NA,NA
+IA00963,Office of the Association of the Free University of Poland Bydgoszcz,OAFUPB,NA,NA,NA,NA
+IA00965,OKN Education Culture Science,OKN,NA,Independent Society,NA,NA
+IA00965,OKN Education Culture Science,OKN,NA,NA,NA,NA
+IA00966,Olsztyn Provincial Hospital,OPH,NA,Medical Facility,NA,NA
+IA00967,Open Letter to Enrico Berlinguera,OLETEB,NA,Protest Statement,NA,NA
+IA00968,Open Letter to General Jaruzelski regarding Grzegorz Przemyk,OLETGJ,NA,Protest Statement,NA,NA
+IA00970,Open Letter to Party Members,OLETPM,NA,Protest Statement,NA,NA
+IA00971,Open Letter to the Sejm protesting the De-legalization of Solidarność,OLETSDS,NA,Protest Statement,NA,NA
+IA00973,Organizational Committee at the Medical Academy and State Clinical Hospital Kraków,OCMAK,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00974,Organizing Committee of Self-Governing Workers ZSO POLAM,OCSGWZ,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA00975,Papal Academy of Theology Kraków,PACTK,NA,Postsecondary School,NA,NA
+IA00976,PAN,PAN,NA,Research Institue,NA,NA
+IA00977,PAN Archive Kraków,PAN,ARCK,Research Institue,NA,NA
+IA00981,PAN Committee for Architecture and Urbanization Kraków,PAN,CAUK,Research Institue,NA,NA
+IA00982,PAN Committee for Architecture and Urbanization,PAN,CAU,Research Institue,NA,NA
+IA00983,PAN Committee for Chemistry,PAN,CFC,Research Institue,NA,NA
+IA00985,PAN Committee for Pathology,PAN,CFPA,Research Institue,NA,NA
+IA00986,PAN Committee for Ocean Research,PAN,CFOR,Research Institue,NA,NA
+IA00988,PAN Committee of Environmental Engineers,PAN,COEE,Research Institue,NA,NA
+IA00989,PAN Committee on Economics,PAN,COEC,Research Institue,NA,NA
+IA00990,PAN Committee on Fundamental Medical Science Sociology Commission,PAN,COFMSSC,Research Institue,NA,NA
+IA00991,PAN Committee on Human Rehabilitation and Adaptation,PAN,COHRA,Research Institue,NA,NA
+IA00992,PAN Committee on National Spatial Planning,PAN,CONSP,Research Institue,NA,NA
+IA00993,PAN Committee “People and the Environment”,PAN,CPAE,Research Institue,NA,NA
+IA00995,PAN Copernicus Astronomical Center,PAN,CAC,Research Institue,NA,NA
+IA00996,PAN Council of Scientific Associations,PAN,CSA,Research Institue,NA,NA
+IA00997,PAN Department of Astronomy,PAN,DOA,Research Institue,NA,NA
+IA00998,PAN Department of Legal Sciences,PAN,DOLS,Research Institue,NA,NA
+IA00999,PAN Department of Oceanography,PAN,DOO,Research Institue,NA,NA
+IA01000,PAN Environmental Planning Commission of the Committee for National Spatial Development,PAN,CONSPEPC,Research Institue,NA,NA
+IA01001,PAN Institute of Biochemistry and Biophysics,PAN,IBB,Research Institue,NA,NA
+IA01002,PAN Institute of Economics,PAN,IEC,Research Institue,NA,NA
+IA01004,PAN Institute of Fluid-Flow Machinery Gdańsk,PAN,IFFMG,Research Institue,NA,NA
+IA01005,PAN Institute of Fundamental Technological Research,PAN,IFTR,Research Institue,NA,NA
+IA01006,PAN Institute of Geography and Spatial Development,PAN,IGSD,Research Institue,NA,NA
+IA01007,PAN Institute of History,PAN,IH,Research Institue,NA,NA
+IA01008,PAN Institute of Immunology and Experimental Therapy,PAN,IIET,Research Institue,NA,NA
+IA01009,PAN Institute of Law and Society,PAN,ILAS,Research Institue,NA,NA
+IA01010,PAN Institute of Machine Mathematics,IMM,NA,NA,NA,NA
+IA01011,PAN Institute of Mathematics in Wrocław,PAN,IMATHW,Research Institue,NA,NA
+IA01012,PAN Institute of Oceanology,PAN,IOCEAN,Research Institue,NA,NA
+IA01013,PAN Institute of Organic Chemistry,PAN,IORGC,Research Institue,NA,NA
+IA01014,PAN Institute of Philosophy and Sociology,PAN,IPS,Research Institue,NA,NA
+IA01015,PAN Institute of Physics,PAN,IPHYSICS,Research Institue,NA,NA
+IA01016,PAN Institute of the History of Science Education and Technology,PAN,IHSET,Research Institue,NA,NA
+IA01017,PAN Laboratory for Social Sciences,PAN,LSS,Research Institue,NA,NA
+IA01018,PAN Library,PAN,LIB,Research Institue,NA,NA
+IA01020,PAN Medical Sciences Commission,PAN,MEDSC,Research Institue,NA,NA
+IA01021,PAN Polimers Commission,PAN,POLIC,Research Institue,NA,NA
+IA01022,PAN Water Resources Committee,PAN,WRC,Research Institue,NA,NA
+IA01023,Papal Council on Culture,PCC,NA,Charitable or Humanitarian Organization,NA,NA
+IA01024,“Parasol” Scout Troop Warsaw,PARAST,NA,Scouting Organization,NA,NA
+IA01025,Paris École pratique des hautes études,PEPHE,NA,Postsecondary School,NA,NA
+IA01026,Pastoral Care for Catholic Intellectuals,PCKI,NA,Charitable or Humanitarian Organization,NA,NA
+IA01028,Pastoral Care for Farmers,PCFARM,NA,Charitable or Humanitarian Organization,NA,NA
+IA01029,Pastoral Care for Lawyers,PCL,NA,Charitable or Humanitarian Organization,NA,NA
+IA01031,Pastoral Care for Working People,PCWP,NA,Charitable or Humanitarian Organization,NA,NA
+IA01032,Pastoral Care for Working People College of Catholic Social Doctrine,PCWPCCS,NA,Charitable or Humanitarian Organization,NA,NA
+IA01033,Pastoral Care of the Parish Council of Former Political Prisoners and Internees,PCPCFPP,NA,Charitable or Humanitarian Organization,NA,NA
+IA01034,Pastoral Center for Christian Culture,PCCC,NA,Charitable or Humanitarian Organization,NA,NA
+IA01035,Pastoral Communities of Farmers,PCOMFARM,NA,Charitable or Humanitarian Organization,NA,NA
+IA01036,Peasant Party,PSL,NA,Political Party,NA,NA
+IA01037,Peasant Self-Defense Committees,PSDC,NA,Opposition Group,NA,NA
+IA01038,Peoples University,UP,NA,Postsecondary School,NA,NA
+IA01040,PGR Płociczno,PGRP,NA,Factory,NA,NA
+IA01041,Pirogow Hospital,PH,NA,Medical Facility,NA,NA
+IA01042,Planning Commission Computing Center,PLCCC,NA,Government Leadership Body National,NA,NA
+IA01043,Polytechnic Silesia,SPOLY,NA,Postsecondary School,NA,NA
+IA01044,Polish Associations of Historians,PAH,NA,National Professional Association,NA,NA
+IA01045,Polish Association of Theoretical and Applied Mechanics,PATAM,NA,National Professional Association,NA,NA
+IA01048,Polish Chemical Society,PCS,NA,National Professional Association,NA,NA
+IA01049,Polish Ecological Club,PEC,NA,National Professional Association,NA,NA
+IA01050,Polish Ecological Club Gdańsk Branch,PEC,GK,National Professional Association,NA,NA
+IA01051,Polish Economic Society,PTE,NA,National Professional Association,NA,NA
+IA01052,Polish Episcopate Secretariat,EPISP,SEC,Charitable or Humanitarian Organization,NA,NA
+IA01054,Polish Episcopate Commission on Secular Apostate Affairs,EPISP,CSAA,Charitable or Humanitarian Organization,NA,NA
+IA01057,Polish Helsinki Committee,PHC,NA,Opposition Group,NA,NA
+IA01058,Polish Historical Society,PHS,NA,National Professional Association,NA,NA
+IA01059,Polish Independence Agreement,PPN,NA,Protest Statement,NA,NA
+IA01061,Polish Music Publishers,PMP,NA,National Professional Association,NA,NA
+IA01062,Polish PEN Club,PPEN,NA,National Professional Association,NA,NA
+IA01065,Polish Physics Society,PPHYS,NA,National Professional Association,NA,NA
+IA01066,Polish Radio,RADP,NA,Government Agency National,NA,NA
+IA01067,Polish Radio Youth Editor,RADP,YED,Government Agency National,NA,NA
+IA01068,Polish Scouting Association - ZHP,ZHP,NA,NA,NA,NA
+IA01069,Polish Scouting Association Central School for Instructors,ZHP,CSI,Scouting Organization,NA,NA
+IA01070,Polish Sociological Association,PSOCA,NA,National Professional Association,NA,NA
+IA01071,Polish Socialist Party,PPS,NA,Political Party,NA,NA
+IA01072,Polish Socialist Party Freedom Equality Independence,PPSFEI,NA,Opposition Group,NA,NA
+IA01073,Polish State Railways,PSR,NA,Government Agency National,NA,NA
+IA01074,Polish Tatra Society Kraków,PTSK,NA,Independent Society,NA,NA
+IA01075,Polish Television - TVP,TVP,NA,NA,NA,NA
+IA01076,Polish Television Programs for Children and Youth,TVP,CY,Government Agency National,NA,NA
+IA01077,Polish Tourist and Sightseeing Society,PTTK,NA,National Professional Association,NA,NA
+IA01078,Polish Tourist and Sightseeing Society Touring Club Instructors,PTTK,TCI,National Professional Association,NA,NA
+IA01079,Polish Writers Association,ZLP,NA,National Professional Association,NA,NA
+IA01080,Political Discussion Club -  UW,PDCUW,NA,NA,NA,NA
+IA01081,Pomeranian Social Club of the Kashubian-Pomeranian Society,PSCKPS,NA,Independent Society,NA,NA
+IA01082,Poniatowa Electrical Machine Factory,PEMF,NA,Factory,NA,NA
+IA01083,Port of Gdańsk Ship Institute,PGKSI,NA,Research Institue,NA,NA
+IA01085,Poznań City Economic Planning Commission,PZCEPC,NA,Government Agency Regional or Local,NA,NA
+IA01087,Poznań Municipal National Council Committee for the Defense of the Environment,PZMNC,CDEN,Government Leadership Body Regional or Local,NA,NA
+IA01088,Poznań Polytechnic,PZPOLY,NA,Postsecondary School,NA,NA
+IA01089,Poznań University,PZU,NA,Postsecondary School,NA,NA
+IA01091,Poznań University Faculty of Biology and Earth Science,PZU,FBES,Postsecondary School,NA,NA
+IA01092,Poznań University Faculty of Law,PZU,FLAW,Postsecondary School,NA,NA
+IA01093,Praski Hospital Warsaw Department of Internal Medicine,PHW,DIM,Medical Facility,NA,NA
+IA01094,Press Union of Poles in Germany,PUPIG,NA,International Professional Association,NA,NA
+IA01095,Primary School Nr. 38 Bydgoszcz,PS38B,NA,High School,NA,NA
+IA01096,Primate Stefan Wyszyński Information Office,PSWIO,NA,Charitable or Humanitarian Organization,NA,NA
+IA01097,Primates Aid Committee,PAC,NA,Charitable or Humanitarian Organization,NA,NA
+IA01098,Primates Committee to Aid Neighbors,PCAN,NA,Charitable or Humanitarian Organization,NA,NA
+IA01099,Primates Committee for People Deprived of their Liberty and their Families,PCPDLF,NA,Charitable or Humanitarian Organization,NA,NA
+IA01101,Primates Social Council,PSC,NA,Charitable or Humanitarian Organization,NA,NA
+IA01102,Prison Care Association Patronat,PCAP,NA,Charitable or Humanitarian Organization,NA,NA
+IA01103,Prisoners Aid Committee in Pozńan,PACP,NA,Charitable or Humanitarian Organization,NA,NA
+IA01104,Prosecutor Generals Office,PGO,NA,Legal Office,NA,NA
+IA01105,Prosecutors Office of the Central District of Warsaw,POCDW,NA,Government Agency Regional or Local,NA,NA
+IA01106,Protest Leader Against Nuclear Power Plant in Klempicz,PLANPP,NA,Protest Action,NA,NA
+IA01107,Provincial House of Culture Bydgoszcz,PHCB,NA,Government Agency Regional or Local,NA,NA
+IA01109,Pruszkow Railway Hospital Department of Internal Medicine Railway,PRH,DIM,Medical Facility,NA,NA
+IA01110,PZPR Central Committee Alternate Member,PZPRCC,AM,Communist Party Leadership Body National,NA,NA
+IA01111,PZPR Central Commitee Member,PZPRCC,M,NA,NA,NA
+IA01112,PZPR Central Committee Womens Department,PZPRCC,WD,Communist Party Leadership Body National,NA,NA
+IA01113,PZPR member,PZPR,MEM,NA,NA,NA
+IA01114,PZPR POP Consultation and Negotiating Commission,PZPE,POP,Communist Party Leadership Body National,NA,NA
+IA01115,Radawnica Peoples University,RPU,NA,Postsecondary School,NA,NA
+IA01116,Radio and Television Committee,RTVC,NA,Government Agency Regional or Local,NA,NA
+IA01117,Radio Czubajka,RCZUB,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01119,Radio Solidarność in Kielce,RSOL,KIEL,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01120,Radio Solidarność in Łęczna,RSOL,LECZ,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01121,Radio Solidarność Mazowsze,RSOL,MAZO,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01123,Reconciliation committee of Creative and Scientific Associations,RCCSA,NA,Independent Society,NA,NA
+IA01124,Redor Center for Research and Development in Bielsko-Biała,RCRDBB,NA,Research Institue,NA,NA
+IA01125,“Red Troop” Polish Scouting Association,REDTPSA,NA,Scouting Organization,NA,NA
+IA01126,“Red Number One” Warsaw Scout Troop,RED1WST,NA,Scouting Organization,NA,NA
+IA01127,Regional Council for Aid to Political Prisoners Gdańsk,RCAPPG,NA,Charitable or Humanitarian Organization,NA,NA
+IA01128,Regional Enterprise of Urban Transport in Szczecin,REUTS,NA,Factory,NA,NA
+IA01129,Report on the observance of human and civil rights in the People's Republic,REPOHCR,NA,Protest Statement,NA,NA
+IA01130,Report Poland Five Years After August,REP5Y,NA,Protest Statement,NA,NA
+IA01131,Report Solidarność Today,REPST,NA,Protest Statement,NA,NA
+IA01132,Resistence Group “Solidarni”,RESGS,NA,Opposition Group,NA,NA
+IA01133,Romuald Targutta Black One Warsaw Scout Team,RTB1WST,NA,Scouting Organization,NA,NA
+IA01134,ROPCiO member,RPOCIO,NA,NA,NA,NA
+IA01135,Ruch,RUCH,MEM,Opposition Group,NA,NA
+IA01137,Rural Solidarność advisor,RURS,ADV,Opposition Group Leadership Body National,NA,NA
+IA01138,Rural Solidarność National Presidium,RURS,NPRES,Opposition Group Leadership Body National,NA,NA
+IA01139,Rural Solidarność Rzeszow Agreement Signatory,RURS,RZAGS,NA,NA,NA
+IA01139,Rural Solidarność Rzeszow Agreement Signatory,RURS,RZAGS,Protest Statement,NA,NA
+IA01140,Rural Solidarność Temporary National Council,RURS,TKR,Opposition Group Leadership Body National,NA,NA
+IA01142,Rural Solidarność Szczecin Provincial Founding Committee,RURS,SZPFC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01143,Rural Solidarność Ziema Białostok Regional Council Presidium,RURS,ZBRCP,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01145,Sailing Club Aquarius LOK,SCALOK,NA,Independent Society,NA,NA
+IA01146,Salesian Society of the Helpers of the Church,SSHC,NA,Charitable or Humanitarian Organization,NA,NA
+IA01148,School of Mechanized Loading Machines of the Executive Board Port of Gdańsk,SMLM,NA,Factory,NA,NA
+IA01149,"School of Political Science, Paris",SPSP,NA,NA,NA,NA
+IA01151,School of Technical-Mechanical Metallurgy in Nowa Huta,STMMNH,NA,Postsecondary School,NA,NA
+IA01152,School of Technical-Mechanical Metallurgy in Warsaw,STMMW,NA,Postsecondary School,NA,NA
+IA01153,Scout Movement of the Republic Council,SMR,COU,Scouting Organization,NA,NA
+IA01154,Scout Movement of the Republic Founding Committee,SMR,FC,Scouting Organization,NA,NA
+IA01156,Sejm Economic and Social Council,SEJM,ESC,Government Agency Leadership Body National,NA,NA
+IA01157,Self-educating Group,SEG,NA,Independent Society,NA,NA
+IA01158,Seminar for Bogdan Gotowski,SEMBG,NA,Salon,NA,NA
+IA01159,Seminar on Experience and the Future in Warsaw,SEMEFW,NA,Salon,NA,NA
+IA01160,Seminar on the History of the PRL,SEMHPRL,NA,Salon,NA,NA
+IA01161,Seminar on Recent Polish History,SEMRPH,NA,Salon,NA,NA
+IA01162,Seminar on “Poland in Europe”,SEMPIE,NA,NA,NA,NA
+IA01164,Seminar on “The Truth About Poland”,SEMTAP,NA,Salon,NA,NA
+IA01165,Seminar of Stanisław Ehrlich,SEMSE,NA,Salon,NA,NA
+IA01166,Service Club for Independence Nysa,SCIN,NA,Salon,NA,NA
+IA01167,Service Team,ZU,NA,Independent Society,NA,NA
+IA01168,Silesian Ecological Club,SEC,NA,Independent Society,NA,NA
+IA01170,Silesia University Faculty of Law and Administration in Katowice,SILU,FLAA,NA,NA,NA
+IA01171,Small Vehicle Factory Bielsko-Biały Department of Transport,SVFBB,DOT,Factory,NA,NA
+IA01172,Social Alliance “Renaissance” in Szczecin,SARSZ,NA,Opposition Group,NA,NA
+IA01173,Social Association for Human Rights,SAHR,NA,Opposition Group,NA,NA
+IA01175,Social Committee on Education,SCE,NA,Independent Society,NA,NA
+IA01176,Social Committee on Health,SCH,NA,Independent Society,NA,NA
+IA01177,Social Committee on Science,SCS,NA,Independent Society,NA,NA
+IA01179,Social Council of the Foundation of Independent Publishers,SCFIP,NA,Independent Society,NA,NA
+IA01180,Social Council of the National Economy,SCNE,NA,Independent Society,NA,NA
+IA01183,Social Insurance Institution (ZUS) Headquarters Warsaw,ZUS,HQ,Government Agency National,NA,NA
+IA01184,Social Legislative Council (Solidarność),SLCS,NA,Opposition Group Leadership Body National,NA,NA
+IA01185,Social Library,SL,NA,Independent Society,NA,NA
+IA01186,Social Publishing House “Znak”,ZNAK,NA,NA,NA,NA
+IA01187,Social Sciences Committee “Solidarity”,SSCSOL,NA,Independent Society,NA,NA
+IA01188,Socialist Union of Polish Students,SZSP,MEM,Opposition Group,NA,NA
+IA01189,Socialist Union of Polish Students boycott,SZSP,BOYC,Protest Action,NA,NA
+IA01190,Society for Mining Engineers and Technicians,SMET,NA,National Professional Association,NA,NA
+IA01191,Society for the Promotion and Propagation of Science,SPPS,NA,National Professional Association,NA,NA
+IA01192,Society for Academic Courses,TKN,NA,Independent Society,NA,NA
+IA01193,Society for Reform and Democracy,SRD,NA,NA,NA,NA
+IA01194,Sodalicji Academic Youth Temporary Leadership Circle Gdańsk,SAYTLCG,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01195,Sodalicji Marianski Academic Union - ZASM,ZASM,NA,NA,NA,NA
+IA01196,Solidarity Archive,SOLARCH,NA,Research Institue,NA,NA
+IA01199,Solidarity Tutorials,ST,NA,Salon,NA,NA
+IA01200,Specialist Team Mental Health Care Wrocław,STMHCWR,NA,Medical Facility,NA,NA
+IA01201,St. Maximilian Kolbe Brotherhood of Temperance,SMKBOT,NA,Independent Society,NA,NA
+IA01202,Stałowa Wola Steel Workers,SWSW,NA,Factory,NA,NA
+IA01203,Staropolska Industrial Association,SIA,NA,National Professional Association,NA,NA
+IA01204,State Clinical Hospital No. 4,SCH4,NA,NA,NA,NA
+IA01205,State Commission for Economic Planning,SCFEP,NA,Government Agency Leadership Body National,NA,NA
+IA01208,State Council for Environmental Protection,SCEP,NA,Government Agency Leadership Body National,NA,NA
+IA01209,State Council for the Protection of Nature,SCPN,NA,Government Agency Leadership Body National,NA,NA
+IA01210,State Higher School of Fine Arts Gdańsk,SHSFAG,NA,Postsecondary School,NA,NA
+IA01211,State Labor Inspectorate,SLI,NA,Government Agency National,NA,NA
+IA01212,State Scientific Publishing House,SSPH,NA,Publishing House,NA,NA
+IA01213,State Technical School of Chemistry Gorzow Wielkopolski,STSCGW,NA,Postsecondary School,NA,NA
+IA01214,Stefan Batory University Wilno Faculty of Law,SBU,FLAW,Postsecondary School,NA,NA
+IA01215,Student Solidarność Committee Wrocław,SSOLI,COMWR,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01216,Student Solidarność Committee Tri-City Universities,SSOLI,CTRIC,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01218,Strike Committee Bicycle Factory Premot Romet Bydgoszcz,SCBFPRB,NA,Protest Action,NA,NA
+IA01219,Strike Committee Construction Companies in the Copper Basin,SCCCCB,NA,Protest Action,NA,NA
+IA01220,Strike Committee Marine Electrical Equipment and Automation Plant Elmore,SCMEEAUP,NA,Protest Action,NA,NA
+IA01221,Strike Committee Julian Marchlewski Textile Factory Łódź,SCJMTF,NA,Protest Action,NA,NA
+IA01222,Strike Committee KWK Andaluzja,SCKA,NA,Protest Action,NA,NA
+IA01225,Strike Committee Regional Enterprise of Urban Transport in Szczecin,SCREPUTS,NA,Protest Action,NA,NA
+IA01226,Strike Committee KWB Bełchatów,SCKB,NA,Protest Action,NA,NA
+IA01227,Strike Committee KWK “Thirtieth Anniversary of the PRL” Pniówek,SCK30PRL,NA,Protest Action,NA,NA
+IA01228,Strike Committee KWK “Manifest Lipcowy”,SCKML,NA,Protest Action,NA,NA
+IA01229,Strike Committee KWK “Victoria”,SCKV,NA,Protest Action,NA,NA
+IA01232,Strike Committee Ustrzy Dolny,SCUD,NA,Protest Action,NA,NA
+IA01234,Strike Committee Ursus Mechanical Factory (August 1988),SCUMFA88,NA,Protest Action,NA,NA
+IA01237,Supreme Court Civil Chamber,SUPCT,CIV,Legal Office,NA,NA
+IA01239,Szczecin Port Authority,SZPA,NA,Government Agency Regional or Local,NA,NA
+IA01240,Szczecin Shipyard Strike 1980,SZSS80,NA,Protest Action,NA,NA
+IA01241,śląsk University,SLU,NA,Postsecondary School,NA,NA
+IA01243,Teachers Solidarność Gdańsk,TSOLIGK,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01244,Technical College of Foreign Trade,TCFT,NA,Postsecondary School,NA,NA
+IA01245,Technical School of Auto Mechanics Szczecin,TSAMS,NA,Postsecondary School,NA,NA
+IA01246,Technical School of Building Szczecin,TSBS,NA,Postsecondary School,NA,NA
+IA01247,Technical School of Mining for Workers in Jastrzebie-Zdroj,TSMWJZ,NA,Postsecondary School,NA,NA
+IA01248,Technical School of the Paper Industries Konstancin-Jeziorna,TSPIKJ,NA,Postsecondary School,NA,NA
+IA01251,Temporary Faculty Committee Solidarność Gdańsk University,TFCSGU,NA,Protest Action,NA,NA
+IA01252,Tewa Semiconductor Factory Warsaw,TSFW,NA,Factory,NA,NA
+IA01253,Textiles Vocational School Łódź,TVSL,NA,Postsecondary School,NA,NA
+IA01255,Theater of the Grotesque Kraków,TGKR,NA,Government Agency Regional or Local,NA,NA
+IA01257,Trade Union of Construction and Housing Cooperatives Main Board,TUCHC,MB,Government Agency National,NA,NA
+IA01258,UNESCO Committee on Biomaterials and Biotechnology,UNESCO,CBB,International Professional Association,NA,NA
+IA01259,"UNESCO Center for Research on Social Economic Development in South Asia, Delhi",UNESCO,CRSED,International Professional Association,NA,NA
+IA01260,UNESCO Department of Cultural Development,UNESCO,DCD,International Professional Association,NA,NA
+IA01261,Union of Polish Academic Youth -  ZAMP,ZAMP,NA,NA,NA,NA
+IA01262,Union of Polish Authors and Light Music Composers - ZAKR,ZAKR,NA,NA,NA,NA
+IA01263,Union of Polish Socialist Youth,UPSY,NA,National Professional Association,NA,NA
+IA01264,Union of Polish Students - ZSP,ZSP,NA,NA,NA,NA
+IA01265,Union of Polish Teachers - ZNP,ZNP,NA,NA,NA,NA
+IA01266,Union of Polish Teachers Departmental Council,ZNP,DC,National Professional Association,NA,NA
+IA01267,Union of Revolutionary Youth,URY,NA,Opposition Group,NA,NA
+IA01269,United Nations Group of Experts of the European Trade Commission Regarding Urban and Regional Planning,UN,GEETCURP,International Professional Association,NA,NA
+IA01270,United Nations Economic Commission for Europe,UN,ECE,International Professional Association,NA,NA
+IA01276,University Extension Workers Solidarność,UEWS,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01277,University of Christian Workers,CWU,NA,Postsecondary School,NA,NA
+IA01278,University of Oran (Algeria) Department of Clinical Pathology,UORAN,DCP,Postsecondary School,NA,NA
+IA01279,Ursus Mechanical Plant,UMP,NA,Factory,NA,NA
+IA01279,Ursus Mechanical Plant,UMP,NA,NA,NA,NA
+IA01281,Ustrzyki Dolne Strike Participant,UDSTRIKE,NA,Protest Action,NA,NA
+IA01283,Vilnius University Faculty of Medicine,UV,FMED,Postsecondary School,NA,NA
+IA01284,Warsaw Academy of Political Science Faculty of Consular and Diplomacy,WAPS,FCAD,Postsecondary School,NA,NA
+IA01286,Warsaw Office of Building and Investment,WOBI,NA,Government Agency Regional or Local,NA,NA
+IA01287,Warsaw Bureau of Projects,WBOP,NA,Government Agency Regional or Local,NA,NA
+IA01288,Warsaw Bureau of Scientific-Design for City-wide Building Projects,WBSCCBP,NA,Government Agency Regional or Local,NA,NA
+IA01289,Warsaw Correspondence High School No. 3,WCHS3,NA,High School,NA,NA
+IA01290,Warsaw Development Planning Office,WDPO,NA,Government Agency Regional or Local,NA,NA
+IA01291,Warsaw Voivodship Court Judge,WVCJ,NA,Legal Office,NA,NA
+IA01293,Warsaw High School No. 20,WHS20,NA,High School,NA,NA
+IA01294,Warsaw Juliusz Słowacki High School no. 7 of the Society of Friends of Children,WJSHS7,NA,High School,NA,NA
+IA01295,Warsaw Municipal Economic Planning Commission,WMEPC,NA,Government Agency Regional or Local,NA,NA
+IA01296,Warsaw-Ochota Municipal Hospital Department of Internal Medicine,WOMH,DIM,NA,NA,NA
+IA01297,Warsaw-Ochota Sanitary and Epidemiological Station,WOSES,NA,Medical Facility,NA,NA
+IA01299,Warsaw Polytechnic Department of Automation and Telemechanics,WPOLY,DAT,Postsecondary School,NA,NA
+IA01300,Warsaw Polytechnic Mechanical Engineering Division,WPOLY,MED,Postsecondary School,NA,NA
+IA01301,Warsaw Polytechnic Faculty of Architecture,WPOLY,FARCH,NA,NA,NA
+IA01301,Warsaw Polytechnic Faculty of Architecture,WPOLY,FARCH,Postsecondary School,NA,NA
+IA01302,Warsaw Polytechnic Faculty of Electronics,WPOLY,FELEC,Postsecondary School,NA,NA
+IA01303,Warsaw Polytechnic Faculty of Engineering,WPOLY,FENG,Postsecondary School,NA,NA
+IA01304,Warsaw Polytechnic Faculty of Chemistry,WPOLY,FCHEM,Postsecondary School,NA,NA
+IA01305,Warsaw Polytechnic Faculty of Civil Engineering,WPOLY,FCE,Postsecondary School,NA,NA
+IA01306,Warsaw Polytechnic Faculty of Electronics,WPOLY,FELECT,Postsecondary School,NA,NA
+IA01307,Warsaw Polytechnic Faculty of Environmental Engineering,WPOLY,FENV,Postsecondary School,NA,NA
+IA01308,Warsaw Polytechnic Group for Computer Measuring Technology,WPOLY,GCMT,Postsecondary School,NA,NA
+IA01309,Warsaw Polytechnic Faculty of Electrical Engineering,WPOLY,FEENG,Postsecondary School,NA,NA
+IA01311,Warsaw Polytechnic Rector,WPOLY,RECT,NA,NA,NA
+IA01312,Warsaw Polytechnic Student Government,WPOLY,SG,Postsecondary School,NA,NA
+IA01314,Warsaw Steel Works,WSW,NA,Factory,NA,NA
+IA01315,Warsaw Steel Works Steel Workers Social Self-Defense Committee,WSW,KOS,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01316,Warsaw Teacher Training Institute,WTTI,NA,Postsecondary School,NA,NA
+IA01317,Warsaw Television Works,WTW,NA,Factory,NA,NA
+IA01318,Warsaw University Branch Office in Białystok,UW,BOB,Postsecondary School,NA,NA
+IA01319,Warsaw University Branch Office in Białystok History Institute,UW,BOBHI,Postsecondary School,NA,NA
+IA01320,Warsaw University Conference of Deans Illegal Meetings,UW,CODIM,Postsecondary School,NA,NA
+IA01321,Warsaw University Department of Biophysics,UW,DBIOP,Postsecondary School,NA,NA
+IA01322,Warsaw University Department of English Philology,UW,DENGPH,Postsecondary School,NA,NA
+IA01323,Warsaw University Department of Finance and Financial Law,UW,DFFLAW,Postsecondary School,NA,NA
+IA01324,Warsaw University Department of Math Computer Science and Mechanics,UW,DMCSM,Postsecondary School,NA,NA
+IA01326,Warsaw University Department of Orientalism,UW,DOO,Postsecondary School,NA,NA
+IA01327,Warsaw University Faculty of Art History,UW,FARTH,Postsecondary School,NA,NA
+IA01328,Warsaw University Faculty of Biology,UW,FBIO,Postsecondary School,NA,NA
+IA01329,Warsaw University Faculty of Chemistry,UW,FCHEM,Postsecondary School,NA,NA
+IA01330,Warsaw University Faculty of Economics,UW,FECON,Postsecondary School,NA,NA
+IA01331,Warsaw University Faculty of Geography and Regional Studies,UW,FGEORS,Postsecondary School,NA,NA
+IA01332,Warsaw University Faculty of Geology,UW,FGEOL,Postsecondary School,NA,NA
+IA01333,Warsaw University Faculty of History,UW,FHIST,Postsecondary School,NA,NA
+IA01334,Warsaw University Faculty of Humanities,UW,FHUM,Postsecondary School,NA,NA
+IA01335,Warsaw University Faculty of Journalism and Political Studies,UW,FJOURPS,Postsecondary School,NA,NA
+IA01336,Warsaw University Faculty of Law and Administration,UW,FLAA,Postsecondary School,NA,NA
+IA01337,Warsaw University Faculty of Law and Administration Department of Agricultural Law,UW,FLAADAG,Postsecondary School,NA,NA
+IA01338,Warsaw University Faculty of Law and Administration Institute of Administrative Law Department of Administrative and Banking Law,UW,FLAAIALD,Postsecondary School,NA,NA
+IA01339,Warsaw University Faculty of Physics,UW,FPHYS,Postsecondary School,NA,NA
+IA01340,Warsaw University Faculty of Math and Physics,UW,FMPH,Postsecondary School,NA,NA
+IA01341,Warsaw University Faculty of Medicine,UW,FMED,Postsecondary School,NA,NA
+IA01342,Warsaw University Faculty of Pedagogy,UW,FPED,Postsecondary School,NA,NA
+IA01343,Warsaw University Faculty of Philosophy and Sociology,UW,FPHSOC,Postsecondary School,NA,NA
+IA01344,Warsaw University Faculty of Polish Philology,UW,FPPH,Postsecondary School,NA,NA
+IA01345,Warsaw University Faculty of Political Economy,UW,FPOLEC,Postsecondary School,NA,NA
+IA01346,Warsaw University Faculty of Social Sciences,UW,FOSS,Postsecondary School,NA,NA
+IA01347,Warsaw University Independent Seminars,UW,UIS,Salon,NA,NA
+IA01348,Warsaw University Institute of Economics,UW,IECON,Postsecondary School,NA,NA
+IA01349,Warsaw University Institute of Experimental Physics,UW,IEXPHY,Postsecondary School,NA,NA
+IA01350,Warsaw University Institute of History,UW,IOH,Postsecondary School,NA,NA
+IA01352,Warsaw University Institute of Microbiology,UW,IMICROB,Postsecondary School,NA,NA
+IA01353,Warsaw University Institute for Social Prevention and Rehabilitation,UW,ISPR,Postsecondary School,NA,NA
+IA01353,Warsaw University Institute for Social Prevention and Rehabilitation,UW,ISPR,NA,NA,NA
+IA01354,Warsaw University Institute of Sociology,UW,ISOC,Postsecondary School,NA,NA
+IA01355,Warsaw University Institute of Theoretical Physics,UW,ITPHYS,Postsecondary School,NA,NA
+IA01356,Warsaw University Library,UW,LIB,Postsecondary School,NA,NA
+IA01358,Warsaw University Senat,UW,SENAT,Postsecondary School,NA,NA
+IA01359,Warsaw University Senat Illegal Solidarność Group,UWSISG,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01360,Warsaw University Solidarność,UWSOLI,NA,Opposition Group,NA,NA
+IA01361,Warsaw University Student Government,UW,STGOV,Postsecondary School,NA,NA
+IA01362,Water Foundation Supervisory Board,WFSB,NA,Government Agency Leadership Body National,NA,NA
+IA01363,Main School of Agriculture Warsaw,SGGW,NA,Postsecondary School,NA,NA
+IA01364,Main School of Agriculture Warsaw Faculty of Agricultural Economics,SGGW,FAGECON,Postsecondary School,NA,NA
+IA01365,Main School of Agriculture Warsaw Faculty of Horticulture,SGGW,FHORT,Postsecondary School,NA,NA
+IA01368,Warsaw Uprising,POWWAW,NA,Protest Action,NA,NA
+IA01369,Week for Political Prisoners,WPOLP,NA,Protest Action,NA,NA
+IA01370,WHO scholar at the Institute of Oncology G. Roussy in Paris,WHO,IOGRP,International Professional Association,NA,NA
+IA01371,WHO European Bureau Council for Health Development,WHO,EBCHD,International Professional Association,NA,NA
+IA01372,Wielkopolska Council “S”,WIELCS,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01373,WiP,WIP,NA,Opposition Group,NA,NA
+IA01374,Wolne Pismo Most publishing house,WPM,NA,Publishing House,NA,NA
+IA01375,Wolski Hospital Warsaw,WHW,NA,Medical Facility,NA,NA
+IA01376,Workers Committee of Solidarity with the Workers Striking on the Coast,WCSWSC,NA,Opposition Group Leadership Body Regional or Local,NA,NA
+IA01377,Workers University for the Mazowsze Region,WUMR,NA,Opposition Group,NA,NA
+IA01378,Working Peoples Pilgrimage to Jasna Gora,WPPJG,NA,Protest Action,NA,NA
+IA01379,World Conference on Religion and Peace,WCRP,NA,Conference or Meeting,NA,NA
+IA01380,Wrocław Archdiocese Social Study Center,WASSC,NA,Research Institue,NA,NA
+IA01381,Wrocław Polytechnic,WRPOLY,NA,Postsecondary School,NA,NA
+IA01383,Wrocław Polytechnic Faculty of Mining,WRPOLY,FMIN,Postsecondary School,NA,NA
+IA01385,Wrocław Social Science Committee,WRSSC,NA,Independent Society,NA,NA
+IA01386,Wrocław Technical College for Finances,WRTCF,NA,Postsecondary School,NA,NA
+IA01387,Wrocław Technical College for Statistics,WRTCS,NA,Postsecondary School,NA,NA
+IA01388,Wrocław University Department of History and Methodology of Science,WRU,DHMS,Postsecondary School,NA,NA
+IA01389,Wrocław University Department of Agricultural Law,WRU,DAGLAW,Postsecondary School,NA,NA
+IA01390,Wrocław University Faculty of Law,WRU,FLAW,Postsecondary School,NA,NA
+IA01391,Wrocław University Faculty of Math Physics and Chemistry,WRPOLY,FMPHYSC,Postsecondary School,NA,NA
+IA01392,Wrocław University Mathematics Institute,WRPOLY,IMATH,Postsecondary School,NA,NA
+IA01393,Young Poland Movement – RMP Ruch Młodej Polski,RMP,NA,NA,NA,NA
+IA01394,Znak Sejm Deputy,ZNAK,SEJM,Political Party Leadership Group National,NA,NA
+IAOO581,Inter-factory Organizational Committee Szczecin,MKOS,NA,NA,NA,NA

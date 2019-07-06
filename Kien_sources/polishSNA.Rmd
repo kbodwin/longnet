@@ -1,0 +1,345 @@
+---
+title: "Polish Revolution Social Network Analysis"
+author: "Kien Nguyen"
+date: "April 21, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r Set up, include=FALSE}
+library(tidyverse)
+library(lubridate)
+library(tidygraph)
+library(igraph)
+library(ggraph)
+library(tidyr)
+library(netrankr)
+library(zoo)
+
+# For whatever reason, this is what allows Polish characters to display
+Sys.setlocale("LC_ALL", "Polish")
+
+# Read data
+dat <- read_csv("https://www.dropbox.com/s/vpv048yx4v6c441/Network_IA.csv?dl=1") %>% na.omit()
+IA_info <- read_csv("https://www.dropbox.com/s/t81y5j8gpg5rw2s/IA_Meta.csv?dl=1") %>% drop_na(IA.Name)
+
+# initialize years
+yearVector <- seq(as.Date("1948-01-01"), as.Date("1989-01-01"), by="year")
+monthVector <- seq(as.Date("1948-01-01"), as.Date("1989-09-01"), by="month")
+```
+
+# Return a graph object (igraph object)
+```{r}
+make_graph <- function(date, node_remove = NA){
+  # Determine which nodes to narrow down to
+  #keep_nodes <- IA_info %>% select(IA.ID) %>% unlist()
+  if(is.na(node_remove)){
+    keep_nodes <- IA_info %>% select(IA.ID) %>% unlist()
+  }else{
+    keep_nodes <- IA_info %>%
+      filter(IA.ID != node_remove) %>%
+      select(IA.ID) %>% unlist()
+  }
+  
+  #print("Haha")
+  # Make graph from counting co-membership
+  my_graph <- dat %>% 
+    filter(IA.ID %in% keep_nodes) %>%
+    filter(mdy(Start.Date) <= ymd(date), mdy(End.Date) >= ymd(date)) %>%
+    select(IA.ID, Member.ID) %>%
+    group_by(IA.ID) %>%
+    table() %>%
+    as.matrix %>%
+    tcrossprod() %>%
+    graph.adjacency(weighted = TRUE)
+  
+  #print("Haha")
+}
+```
+
+# Create a layout object that merge with IA_info data so that it's easy to refer to IA information given edges
+```{r}
+# date = as.Date("1948-01-01")
+getIA_Name <- function(graph){
+  M <- create_layout(graph, layout = "kk")
+  M$name <- as.character(M$name)
+  M <- M %>% left_join(IA_info, by = c("name" = "IA.ID"))
+  M
+}
+```
+
+# Betweeness: Return the most influence IA given exact Date. (the input need to be a date)
+```{r}
+get_central_IA <- function(date){
+  centralIA <- tibble()
+  
+  for (i in as.character(date)){
+    #print(i)
+    g <- make_graph(i)
+    l <- getIA_Name(g)
+    
+    # Get the centrality
+    degree <- betweenness(g, directed = FALSE) #
+    # Get the IA.ID of maximum degree
+    pos_max <- which(degree == max(degree))
+    
+    # Get info of specific IAs given the id of the most centrality IAs of the year.
+    info <- IA_info[IA_info$IA.ID %in% names(pos_max), c("IA.ID", "IA.Name", "IA.Group.1", "Type")]
+    
+    # Combine all infomation into 1 tibble
+    temp <- cbind(info,
+            Centrality = unname(degree[pos_max]),
+            Year = year(i),
+            Month = month.name[month(i)])
+    
+    centralIA <- rbind(centralIA, temp)
+  }
+  
+  # Reorder columns
+  centralIA <- centralIA[c("Year", "Month", "Centrality", "IA.ID", "IA.Name", "IA.Group.1", "Type")]
+  
+  # Rename columns
+  names(centralIA)[c(6,7)]<- c("IA.Group", "Type")
+  
+  return(as_tibble(centralIA))
+}
+```
+
+
+## Betweeness: Return year and centrality measure (0 if institution did not appear) for a specific IA
+```{r}
+get_centrality_by_year_between <- function(IA_id, type = NULL){
+  df <- tibble()
+
+  for (i in as.character(yearVector)){
+    g <- make_graph(i)
+    l <- getIA_Name(g)
+    
+    # Get the centrality
+    degree <- betweenness(g, directed = F) #
+    
+    if (IA_id %in% names(degree))
+      ctlt <- unname(degree[names(degree) == IA_id])
+    else
+      ctlt <- 0
+    
+    #print("lala")
+    # Get info of specific IAs given the id of the most centrality IAs of the year.
+    info <- IA_info[IA_info$IA.ID == IA_id, c("IA.ID", "IA.Name", "IA.Group.1", "Type")]
+    
+    # Combine all infomation into 1 tibble
+    temp <- cbind(info,
+            Centrality = ctlt,
+            Year = year(i),
+            Month = month.name[month(i)])
+    
+    df <- rbind(df, temp)
+  }
+    # Reorder columns
+  df <- df[c("Year", "Month", "Centrality", "IA.ID", "IA.Name", "IA.Group.1", "Type")]
+  
+    # Rename columns
+  names(df)[c(6,7)]<- c("IA.Group", "Type")
+  
+  return(as_tibble(df))
+}
+```
+
+## Betweeness: Return month, year and centrality measure (0 if does not appear) for a specific IA
+```{r}
+get_centrality_by_month_between <- function(IA_id, date, node_remove = NA){
+  df <- tibble()
+
+  for (i in as.character(date)){
+    g <- make_graph(i, node_remove)
+    l <- getIA_Name(g)
+    
+    # Get the centrality
+    degree <- betweenness(g, directed = F) #
+    
+    if (IA_id %in% names(degree))
+      ctlt <- unname(degree[names(degree) == IA_id])
+    else
+      ctlt <- 0
+    
+    print("haha")
+    # Get info of specific IAs given the id of the most centrality IAs of the year.
+    info <- IA_info[IA_info$IA.ID %in% IA_id, c("IA.ID", "IA.Name", "IA.Group.1", "Type")]
+    
+    # Combine all infomation into 1 tibble
+    temp <- cbind(info,
+            Centrality = ctlt,
+            Year = year(i),
+            Month = month.name[month(i)])
+    
+    print("aaa")
+    df <- rbind(df, temp)
+  }
+    # Reorder columns
+  df <- df[c("Year", "Month", "Centrality", "IA.ID", "IA.Name", "IA.Group.1", "Type")]
+  
+    # Rename columns
+  names(df)[c(6,7)]<- c("IA.Group", "Type")
+  
+  return(as_tibble(df))
+}
+```
+## Degree Centrality: Return year and centrality measure (0 if does not appear) for a specific IA
+```{r}
+get_centrality_by_year_degree <- function(IA_id, type = NULL){
+  df <- tibble()
+
+  for (i in as.character(yearVector)){
+    g <- make_graph(i)
+    l <- getIA_Name(g)
+    
+    # Get the centrality
+    degree <- degree(g) #
+    
+    if (IA_id %in% names(degree))
+      ctlt <- unname(degree[names(degree) == IA_id])
+    else
+      ctlt <- 0
+  
+    # Get info of specific IAs given the id of the most centrality IAs of the year.
+    info <- IA_info[IA_info$IA.ID == IA_id, c("IA.ID", "IA.Name", "IA.Group.1", "Type")]
+    
+    # Combine all infomation into 1 tibble
+    temp <- cbind(info,
+            Centrality = ctlt,
+            Year = year(i),
+            Month = month.name[month(i)])
+    
+    df <- rbind(df, temp)
+  }
+    # Reorder columns
+  df <- df[c("Year", "Month", "Centrality", "IA.ID", "IA.Name", "IA.Group.1", "Type")]
+  
+    # Rename columns
+  names(df)[c(6,7)]<- c("IA.Group", "Type")
+  
+  return(as_tibble(df))
+}
+```
+
+## Degree Centrality: Return month, year and centrality measure (0 if does not appear) for a specific IA
+```{r}
+get_centrality_by_month_degree <- function(IA_id, date, node_remove = NA){
+  df <- tibble()
+
+  for (i in as.character(date)){
+    g <- make_graph(i, node_remove)
+    l <- getIA_Name(g)
+    
+    # Get the centrality
+    degree <- degree(g) #
+    
+    if (IA_id %in% names(degree))
+      ctlt <- unname(degree[names(degree) == IA_id])
+    else
+      ctlt <- 0
+  
+    # Get info of specific IAs given the id of the most centrality IAs of the year.
+    info <- IA_info[IA_info$IA.ID == IA_id, c("IA.ID", "IA.Name", "IA.Group.1", "Type")]
+    
+    # Combine all infomation into 1 tibble
+    temp <- cbind(info,
+            Centrality = ctlt,
+            Year = year(i),
+            Month = month.name[month(i)])
+    
+    df <- rbind(df, temp)
+  }
+    # Reorder columns
+  df <- df[c("Year", "Month", "Centrality", "IA.ID", "IA.Name", "IA.Group.1", "Type")]
+  
+    # Rename columns
+  names(df)[c(6,7)]<- c("IA.Group", "Type")
+  
+  return(as_tibble(df))
+}
+```
+
+
+1.	Which individual in the dataset was the most central?
+a) Over all years
+```{r}
+central_IA <- get_central_IA(yearVector)
+table(central_IA$IA.Name)
+```
+Answer: PZPR Member which has the most centrality score over 33 years.
+
+b) In 1988
+```{r}
+get_central_IA(yearVector[length(yearVector) -1])
+```
+Answer: NSZZ Solidamosc Member
+
+d) Each year
+```{r}
+View(central_IA[, c("Year", "IA.Name")])
+```
+Answer: There are different IAs that were most central each year.
+
+2.	How did individual XXXX's centrality change over time? 
+a) PZPR Members - IA01113
+```{r}
+pzpr <- get_centrality_by_year("IA01113")
+
+#View(pzpr[, c("Year","Centrality")])
+```
+
+Is there evidence of linearly increasing/decreasing centrality?
+```{r}
+plot(pzpr$Centrality ~ pzpr$Year, pch = 16, cex = 1, col = "blue")
+abline(lm(pzpr$Centrality ~ pzpr$Year))
+```
+
+Answer: PZPR's centrality has an increasing trend from 1950 to 1980 but suddenly decreases drastically in 1982. Then the IA disappeared in 1983. We can see that before the Polish Revolution, PZPR had the longest time of being the most influential IA (33 years).
+
+b) NSZZ Solidamosc Member - IA00873
+```{r}
+nszz <- get_centrality_by_year("IA00873")
+
+#View(nszz[, c("Year","Centrality")])
+```
+
+Is there evidence of linearly increasing/decreasing centrality?
+```{r}
+plot(nszz$Centrality ~ nszz$Year, pch = 16, cex = 1, col = "green")
+abline(lm(nszz$Centrality ~ nszz$Year))
+```
+
+Answer: NSZZ Solidamosc Member was not established before 1981. It suddenly appeared in 1981 and had huge connections. Though its centrality decreases in 1982, it is clearly to see it starts increasing until 1989. NSZZ Solidamosc Member is the last most influential IA in the Polish Revolution.
+
+
+3.	What is the relationship between individual XXXX and individual YYYY?
+a) PZPR and NSZZ
+```{r}
+dt2 <- data.frame(pzpr$Year, pzpr$Centrality)
+dt2 <- cbind(dt2, IA = "PZPR")
+dt3 <- data.frame(nszz$Year, nszz$Centrality)
+dt3 <- cbind(dt3, IA = "NSZZ")
+names(dt2) <- c("Year", "Centrality", "IA")
+names(dt3) <- c("Year", "Centrality", "IA")
+dt4 <- rbind(dt2, dt3)
+
+ggplot(dt4, aes(Year, Centrality, color = IA)) +
+  geom_point() + 
+  geom_line()
+```
+
+b) Is there a correlation over time between the two centralities?
+```{r}
+cor(pzpr$Centrality, nszz$Centrality)
+```
+Answer: Yes, there is a (weakly) positive relationship between PZPR's centrality and NSZZ's centrality. As PZPR's centrality increases, NSZZ's centrality will increases and vice versa.
+
+
+
+

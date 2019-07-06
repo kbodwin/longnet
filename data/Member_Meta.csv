@@ -1,0 +1,228 @@
+Member.ID,Full.Name,Age,Gender,RT.Affiliation,Profession
+3,Jacek Ambroziak,47,M,Opposition,Lawyer
+4,Stefan Amsterdamski,60,M,Opposition,Academic Philosophy
+5,Artur Balasz,37,M,Opposition,Agricultural Engineer
+6,Bolesław Banaszkiewich,34,M,Opposition,Lawyer
+7,Piotr Baumgart,47,M,Opposition,Agricultural Worker Technician
+8,Janusz Beksiak,59,M,Opposition,Academic Economics
+9,Ryszard Bender,64,M,Opposition,Academic History
+10,Jan Beszta-Borowski,52,M,Opposition,Farmer
+11,Krzysztof Betka,37,M,Opposition,Miner
+12,Grzegorz Białkowski,56,M,Opposition,Academic Physics
+13,Grzegorz Bierecki,25,M,Opposition,Academic Humanities
+14,Robert Bitner,22,M,Opposition,Academic Student
+15,Grzegorz Boguta,36,M,Opposition,Academic Biophysics
+16,Włodzimierz Bojarski,58,M,Opposition,Academic Economist
+18,Mieczysław Borawski,58,M,Opposition,Lawyer
+19,Stefan Bratkowski,54,M,Opposition,Journalist
+20,Ryszard Brzuzy,28,M,Opposition,Worker Technician
+21,Marek Budzyński,49,M,Opposition,Academic Architect
+22,Ryszard Bugaj,44,M,Opposition,Academic Economist
+23,Zbigniew Bujak,33,M,Opposition,Worker Electrician
+24,Iwo Byczewski,40,M,Opposition,Academic Law
+25,Andrzej Czeliński,38,M,Opposition,Academic Sociology
+26,Zbigniew Chłap,59,M,Opposition,Medical Doctor
+27,Maria Chmiel,59,F,Opposition,Medical Doctor
+28,Eryk Chojnacki,26,M,Opposition,Academic Student
+29,Jerzy Ciemniewski,49,M,Opposition,Lawyer
+30,Piotr Ciompa,21,M,Opposition,Academic Student
+31,Paweł Czartoryski,64,M,Opposition,Academic Economics and History of Science
+32,Piotr Czerwiec,25,M,Opposition,Academic Student
+33,Włodzimierz Dąbkowski,52,M,Opposition,Academic Agricultural Sciences
+34,Piotr Dąbrowski,38,M,Opposition,Engineer Agriculture
+35,Tadeusz Diem,48,M,Opposition,Academic Chemistry
+36,Jerzy Dietl,61,M,Opposition,Academic Economics
+37,Jerzy Dłużniewski,43,M,Opposition,Worker Textiles
+38,Wladysław Dobrowolski,61,M,Opposition,Academic Economics
+39,Andrzej Dobrucki,65,M,Opposition,Lawyer
+41,Michał Downarowicz,33,M,Opposition,Academic
+42,Roman Duda,53,M,Opposition,Academic Mathematics
+43,Jan Dworak,40,M,Opposition,Journalist
+44,Kazimierz Dziewanowski,58,M,Opposition,Journalist
+45,Marek Edelman,66,M,Opposition,Medical Doctor
+46,Lech Falandysz,46,M,Opposition,Lawyer
+47,Wanda Falkowska-Szymańska,65,F,Opposition,Journalist
+48,Dariusz Fikus,56,M,Opposition,Journalist
+49,Władysław Findeisen,63,M,Opposition,Academic Electrical Engineer
+50,Władysław Frasyniuk,34,M,Opposition,Worker Bus Mechanic
+51,Marek Frąckowiak,31,M,Opposition,Worker Librarian
+52,Radosław Gawlik,31,M,Opposition,Worker Engineer
+53,Bronisław Geremek,56,M,Opposition,Academic Historian
+54,Grażyna Gęsicka,37,F,Opposition,Academic Sociologist
+55,Mieczysław Gil,45,M,Opposition,Worker Steel
+56,Maria Gintowt-Jankowicz,45,F,Opposition,Lawyer
+57,Andrzej Glapiński,44,M,Opposition,Worker Miner
+58,Elżbieta Golik,24,F,Opposition,Academic Student
+59,Bogusław Kazimierz Gołąb,42,M,Opposition,Worker Mechanic
+60,Helena Góralska,41,F,Opposition,Academic Economist
+61,Jan Andrzej Górny,33,M,Opposition,Worker Computer Systems
+62,Stanisława Grabska,66,F,Opposition,Academic Artist and Theologian
+63,Anna Grajcarek,32,F,Opposition,Medical Doctor
+64,Władysław Grocki,34,M,Opposition,Worker Mining Technician
+65,Andrzej Grudziński,64,M,Opposition,Academic Architect
+66,Janusz Grzelak,47,M,Opposition,Academic Psychologist
+67,Anna Grzymisławska,41,F,Opposition,Lawyer
+68,Jerzy Grzywacz,60,M,Opposition,Academic Physics
+69,Krzysztof Hagemejer,37,M,Opposition,Academic Economics
+70,Aleksander Hall,35,M,Opposition,Academic historian
+71,Arwid Yrio Hansen,71,M,Opposition,Medical Doctor
+72,Stefania Hejmanowska,51,F,Opposition,Worker Chemist
+73,Maciej Tadeusz Iłowiecki,53,M,Opposition,Journalist
+74,Wiesław Isio,37,M,Opposition,Worker
+75,Janina Jankowska,49,F,Opposition,Journalist
+76,Andrzej Janowski,53,M,Opposition,Academic Polonist
+77,Gabriel Janowski,41,M,Opposition,Academic Agriculture
+78,Lech Kazimierz Jarodzki,61,M,Opposition,Worker Mining Engineer
+79,Jerzy Jasiński,58,M,Opposition,Lawyer
+80,Jerzy Jaśkowski,40,M,Opposition,Medical Doctor
+81,Wiesław Johann,49,M,Opposition,Lawyer
+82,Cezary Józefiak,56,M,Opposition,Academic Economics
+83,Stanisław Juchnowicz,65,M,Opposition,Academic Architect
+84,Stefan Jurczak,50,M,Opposition,Worker Steel Mechanic
+85,Mieczysław Kaczanowski,54,M,Opposition,Journalist
+86,Jarosław Kaczyński,39,M,Opposition,Lawyer
+87,Lech Kaczyński,39,M,Opposition,Lawyer
+88,Witold Paweł Kalbarczyk,22,M,Opposition,Student
+89,Marian Kallas,50,M,Opposition,Academic Historian
+90,Mariusz Kamiński,23,M,Opposition,Student
+91,Henryk Karaś,40,M,Opposition,Worker Mining Engineer
+92,Rafał Kasprzyk,36,M,Opposition,Academic Law
+93,Andrzej Kassenberg,40,M,Opposition,Academic Geographer
+94,Janusz Kindler,54,M,Opposition,Academic Engineer
+95,Andrzej Klasik,45,M,Opposition,Academic Economics
+96,Zdisław Kłeczek,51,M,Opposition,Academic Engineering
+97,Wojciech Kłosowski,30,M,Opposition,Artist Sculpter
+98,Jan Kofman,47,M,Opposition,Academic Historian
+99,Ryszard Kostrzewa,42,M,Opposition,Worker
+100,Adam Tadeusz Kowalewski,48,M,Opposition,Academic Economist
+101,Krzysztof Kozłowski,57,M,Opposition,Journalist
+102,Stefan Kozłowski,61,M,Opposition,Academic Geology
+103,Marek Krankowski,42,M,Opposition,Worker Administration
+104,Marcin Król,44,M,Opposition,Journalist
+105,Wiktor Krywulko,37,M,Opposition,Worker Mining Technician
+106,Marek Kulerski,50,M,Opposition,Medical Doctor
+107,Wiktor Kulerski,44,M,Opposition,Academic Historian
+108,Hanna Kulesza,58,F,Opposition,Academic Economist
+109,Michał Kulesza,40,M,Opposition,Lawyer
+110,Władysław J.H. Kunicki-Goldfinger,72,M,Opposition,Academic Microbiologist
+111,Gotfryd Kupryszewski,59,M,Opposition,Academic Chemistry
+112,Zofia Kuratowska,57,F,Opposition,Medical Doctor
+113,Jacek Kurczewski,46,M,Opposition,Academic Sociologist
+114,Jacek Kuroń,54,M,Opposition,Academic Historian
+115,Wojciech Lamentowicz,42,M,Opposition,Academic Law
+116,Antoni Leopold,72,M,Opposition,Academic Agriculture
+117,Edward Lipiec,52,M,Opposition,Academic Agronomist
+118,Władysław Liwak,46,M,Opposition,Lawyer
+119,Helena Łuczywo,43,F,Opposition,Journalist
+120,Bogdan Lis,36,M,Opposition,Worker Electrician
+121,Jan Lityński,43,M,Opposition,Academic Mathematician
+122,Andrzej Łuszewski,32,M,Opposition,Worker Agriculture
+123,Wanda Majewska,42,F,Opposition,Academic Economist
+124,Edward Małecki,47,M,Opposition,Worker Individual Farmer
+125,Tadeusz Mazowiecki,61,M,Opposition,Journalist
+126,Jan Mazurkiewicz,34,M,Opposition,Worker
+127,Albin Melcer,46,M,Opposition,Worker Building Engineer
+128,Jacek Merkel,34,M,Opposition,Worker Engineer
+129,Adam Michnik,42,M,Opposition,Academic Historian
+130,Witold Mieszkowski,50,M,Opposition,Academic Architect
+131,Aureliusz Mikłaszewski,48,M,Opposition,Medical Doctor
+132,Andrzej Milczanowski,49,M,Opposition,Lawyer
+133,Andrzej Miłkowski,49,M,Opposition,Worker Steelworker
+134,Jacek Moskwa,40,M,Opposition,Journalist
+135,Jan Mujżel,65,M,Opposition,Academic Economics
+136,Michał Nawrocki,46,M,Opposition,Academic Physics
+138,Róża Nowotna-Walcowa,66,F,Opposition,Medical Doctor
+139,Edward Olszewski,33,M,Opposition,Worker Robotics
+140,Jan Olszewski,58,M,Opposition,Lawyer
+141,Janusz Onyszkiewicz,51,M,Opposition,Academic Mathematician
+142,Walerian Pańko,47,M,Opposition,Academic Law
+143,Aleksander Paszyński,60,M,Opposition,Journalist
+144,Krystyna Pawłowicz,36,F,Opposition,Academic Law
+145,Alojzy Pietrzyk,37,M,Opposition,Worker Miner
+146,Edmund Jan Osmańczych,75,M,Opposition,Journalist
+147,Janusz Pałubicki,41,M,Opposition,Academic Art History
+148,Leszek Piotrowski,50,M,Opposition,Lawyer
+149,Zygmunt Polański,59,M,Opposition,Academic Economics
+150,Piotr Polmański,34,M,Opposition,Worker Miner
+151,Jerzy Puciata,55,M,Opposition,Artist
+152,Edward Radziewicz,41,M,Opposition,Worker Mechanic
+153,Julian Radziewicz,51,M,Opposition,Academic Pedagogy
+154,Anna Radziwiłł,52,F,Opposition,Academic Historian
+155,Krzysztof Rajpert,55,M,Opposition,Medical Doctor
+156,Jerzy Regulski,64,M,Opposition,Academic Economist
+157,Janusz Reguła,24,M,Opposition,Medical Doctor
+158,Ryszard Reiff,65,M,Opposition,Journalist
+159,Czesław Robakowski,40,M,Opposition,Worker Miner
+160,Zbigniew Rokicki,41,M,Opposition,Worker Farmer
+161,Jan Rokita,29,M,Opposition,Lawyer
+162,Zbigniew Romaszewski,49,M,Opposition,Academic Physics
+163,Jan Rosner,83,M,Opposition,Academic Economics
+164,Andrzej Rozmarynowicz,65,M,Opposition,Lawyer
+165,Henryk Rutkowski,59,M,Opposition,Academic Historian
+166,Zbigniew W. Rykowski,32,M,Opposition,Academic Sociologist
+167,Jerzy Salmonowicz,63,M,Opposition,Academic Chemist
+168,Henryk Samsonowicz,59,M,Opposition,Academic Historian
+169,Janusz Sanocki,34,M,Opposition,Worker
+170,Adolf Sapkowski,62,M,Opposition,Worker Engineer
+171,Jarosław Sellin,25,M,Opposition,Academic
+172,Władysław Sidorowicz,54,M,Opposition,Medical Doctor
+173,Władysław Siła-Nowicki,75,M,Government,Lawyer
+174,Jadwiga Skórzewska,46,F,Opposition,Lawyer
+175,Magdalena Sokołowska,66,F,Opposition,Academic
+176,Andrzej Sosnowski,25,M,Opposition,Student
+177,Grażyna Staniszewska,39,F,Opposition,Academic
+178,Tomasz Stankiewicz,42,M,Opposition,Academic
+179,Adam Stanowski,61,M,Opposition,Academic
+180,Krystyna Starczewska,51,F,Opposition,Academic
+181,Stefan Starczewski,53,M,Opposition,Academic
+182,Joanna Staręga-Piasek,49,F,Opposition,Academic
+183,Antoni Stawikowski,55,M,Opposition,Academic
+184,Kazimierz Stępczak,52,M,Opposition,Academic
+185,Jerzy Stępien,42,M,Opposition,Lawyer
+186,Henryk Jerzy Stępniak,38,M,Opposition,Farmer
+187,Stanisław Stomma,81,M,Opposition,Academic
+188,Adam Strzembosz,58,M,Opposition,Lawyer
+189,Andrzej Suchocki,35,M,Opposition,Academic
+190,Klemens Szaniawski,63,M,Opposition,Academic
+191,Andrzej Szczeklik,50,M,Opposition,Medical Doctor
+192,Jan Józef Szczepański,70,M,Opposition,Journalist
+193,Jarosław Józef Szczepański,38,M,Opposition,Academic
+194,Edward Szwajkiewicz,34,M,Opposition,Worker Electrician
+195,Jacek Szymanderski,43,M,Opposition,Academic
+196,Piotr Szynkiel,21,M,Opposition,Worker
+197,Jarosław śleszyński,26,M,Opposition,Academic
+198,Józef ślisz,54,M,Opposition,Worker Farmer
+199,Hanna świlda-Ziemba,58,F,Opposition,Academic
+200,Henryk Tachasiuk,26,M,Opposition,Worker
+201,Jacek Taylor,49,M,Opposition,Lawyer
+202,Antoni Tokarczuk,37,M,Opposition,Academic
+203,Edmund Tołwiński,52,M,Opposition,Academic
+204,Andrzej Topiński,43,M,Opposition,Academic
+205,Witold Trzeciakowski,62,M,Opposition,Academic
+206,Jerzy Turowicz,86,M,Opposition,Journalist
+207,Jerzy Umiastowski,56,M,Opposition,Medical Doctor
+208,Henryk Urban,37,M,Opposition,Worker
+209,Lech Wałęsa,45,M,Opposition,Worker
+210,Zofia Wasikowska,78,F,Opposition,Lawyer
+211,Jerzy Wertenstein-Żuławski,41,M,Opposition,Academic
+212,Stanisław Węglarz,40,M,Opposition,Worker Miner
+213,Andrzej Wieczorek,40,M,Opposition,Journalist
+214,Andrzej Wielowieyski,61,M,Opposition,Lawyer
+215,Zbigniew Wierzbicki,69,M,Opposition,Academic
+216,Michał Wilczyński,40,M,Opposition,Academic
+217,Edmund Wnuk-Lipiński,44,M,Opposition,Academic
+218,Ewa Wolak,55,F,Opposition,Medical Doctor
+219,Zbigniew Woźniak,41,M,Opposition,Medical Doctor
+220,Jacek Woźniakowski,68,M,Opposition,Academic
+221,Irena Wóycicka,38,F,Opposition,Journalist
+222,Wojciech Wróblewski,31,M,Opposition,Academic
+223,Henryk Wujec,48,M,Opposition,Worker
+224,Jan Jakub Wygnański,24,M,Opposition,Academic
+225,Janina Zakrzewska,59,F,Opposition,Academic
+226,Jan Zalewski,58,M,Opposition,Journalist
+227,Zbigniew Zawistowski,44,M,Opposition,Architect
+228,Jerzy Zdrada,52,M,Opposition,Academic
+229,Andrzej Ziabicki,55,M,Opposition,Academic
+230,Tadeusz Zieliński,62,M,Opposition,Lawyer
+231,Janusz Ziółkowski,64,M,Opposition,Academic
+232,Andrzej Zoll,46,M,Opposition,Academic
