@@ -17,6 +17,18 @@ prev_layout <- create_layout(graph_from_data_frame(bob), layout = "igraph", algo
 
 start <- proc.time()
 
+my_nodes <- unique(dat$IA.ID)
+
+
+my_cents <- get_centralities_today(dat,
+                       node_var = "IA.ID",
+                       edge_var = "Member.ID",
+                       start_date_var = "Start.Date",
+                       end_date_var = "End.Date",
+                       date_today = "1970-01-01")
+
+my_cents <- left_join(my_cents, IA_info)
+
 ggraph(prev_layout) +
   geom_edge_link(aes(edge_width = bob$weight)) +
   geom_node_text(aes(label = name)) +

@@ -29,7 +29,8 @@ make_graph_df <- function(data,
                        first_date = NA, last_date = NA,
                        date_orders = "ymd",
                        edge_labels = edge_var,
-                       node_remove = NULL, edge_remove = NULL){
+                       node_remove = NULL, edge_remove = NULL,
+                       get_edge_names = FALSE){
 
   # start_date_var and end_date_var are column names
 
@@ -124,12 +125,16 @@ make_graph_df <- function(data,
 
   #### Add edge info ####
 
-  data <- data %>% distinct(!!sym(node_var), !!sym(edge_var), !!sym(edge_labels))
+  if (get_edge_names) {
 
-  my_graph <- my_graph %>%
-    mutate(
-      edge_members = map2_chr(to, from, ~find_edge_members(data, node_var, edge_var, edge_labels, .x, .y))
-      )
+    data <- data %>% distinct(!!sym(node_var), !!sym(edge_var), !!sym(edge_labels))
+
+    my_graph <- my_graph %>%
+      mutate(
+        edge_members = map2_chr(to, from, ~find_edge_members(data, node_var, edge_var, edge_labels, .x, .y))
+        )
+
+  }
 
   # Attach names and meta-info to data frame
     return(my_graph)

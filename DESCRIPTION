@@ -21,6 +21,7 @@ Imports:
     readr,
     lubridate,
     tidyr,
-    magrittr
+    magrittr,
+    purrr
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
