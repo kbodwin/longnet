@@ -19,36 +19,45 @@ node_labels = "IA.Name"
 edge_labels = "Full.Name"
 # node_remove = NULL
 edge_remove = NULL
-#date_today = ymd("1970-01-01")
-#which_nodes = unique(data$IA.ID)
+date_today = ymd("1970-01-01")
+which_nodes = unique(data$IA.ID)
 
 
 get_centralities <- function(data,
                              node_var,
                              edge_var,
                              start_date_var,
-                             end_date_var,
-                             by = "day",
+                             end_date_var = NULL,
+                             by = "month",
                              date_orders = "ymd",
                              remove_node = NULL) {
 
   #### Setup ####
 
   # Make sure dates are lubridates
-  if (!is.null(start_date_var)) {
+  # Make sure dates are dates
 
-    data[[start_date_var]] <- lubridate::parse_date_time(data[[start_date_var]], date_orders)
+  if (!assertthat::is.date(data[[start_date_var]])) {
 
-    if (!is.null(end_date_var)) {
+    data[[start_date_var]] <-
+      lubridate::parse_date_time(data[[start_date_var]], date_orders)
 
-      data[[end_date_var]] <- lubridate::parse_date_time(data[[end_date_var]], date_orders)
+  }
 
-    } else {
+  if (!is.null(end_date_var) &&
+      !assertthat::is.date(data[[end_date_var]])) {
 
-      end_date_var <- "end_date"
-      data[[end_date_var]] <- data[[start_date_var]]
+    data[[end_date_var]] <-
+      lubridate::parse_date_time(data[[end_date_var]], date_orders)
 
-    }
+  }
+
+
+  # If only start date supplied, end date is same
+  if (is.null(end_date_var)) {
+
+    end_date_var <- "end_date"
+    data[[end_date_var]] <- data[[start_date_var]]
 
   }
 
@@ -58,17 +67,18 @@ get_centralities <- function(data,
   latest_date <- max(data[[end_date_var]])
 
   # Make a vector of month start dates that covers the full time period.
-  num_days <- lubridate::interval(latest_date, earliest_date) %/% days(1)
 
-  dates_vec <- earliest_date + days(1:num_days)
+  dates_vec <- seq(from=floor_date(earliest_date, "months"), to=ceiling_date(latest_date, "months"), by='month')
 
   #### Centrality measures ####
 
   # For each day, get info for all the nodes
   my_centralities <- map_df(dates_vec,
       ~ get_centralities_today(data,
-                           node_var, edge_var, start_date_var, end_date_var,
-                           date_today  = .x
+                           node_var, edge_var,
+                           start_date_var, end_date_var,
+                           start_date  = .x,
+                           end_date = .x + months(1)
       )
     )
 
@@ -80,13 +90,13 @@ get_centralities <- function(data,
 get_centralities_today <- function(data,
                                    node_var, edge_var,
                                    start_date_var, end_date_var,
-                                   date_today) {
+                                   start_date, end_date = start_date) {
 
 
   my_graph_df <- make_graph_df(data,
                             node_var, edge_var,
                             start_date_var, end_date_var,
-                            first_date = date_today, last_date = date_today)
+                            start_date, end_date)
 
 
   my_graph <- graph_from_data_frame(my_graph_df)
@@ -107,7 +117,7 @@ get_centralities_today <- function(data,
 
   names(my_return_df) <- c(node_var, "Betweenness", "Degree", "Self_Degree")
 
-  my_return_df$Date = rep(date_today, nrow(my_return_df))
+  my_return_df$Date = rep(start_date, nrow(my_return_df))
 
 
   return(my_return_df)

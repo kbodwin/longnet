@@ -29,6 +29,8 @@ my_cents <- get_centralities_today(dat,
 
 my_cents <- left_join(my_cents, IA_info)
 
+
+
 ggraph(prev_layout) +
   geom_edge_link(aes(edge_width = bob$weight)) +
   geom_node_text(aes(label = name)) +

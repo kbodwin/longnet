@@ -52,6 +52,7 @@ make_graph_df <- function(data,
 
   drop <- rep(FALSE, nrow(data))
 
+
   if (!is.null(node_remove)) {
 
     drop <- drop | data[[ node_remove[[1]] ]] %in% node_remove[[2]]
@@ -68,26 +69,44 @@ make_graph_df <- function(data,
   ## being lazy for now because it's my data I won't be stupid (hopefully)
   ## start date var is required; end date will be considered start date if not supplied
 
+  # Make sure dates are dates
+
+  # All date info only matters if we actually have a date variable
+
   if (!is.null(start_date_var)) {
 
-    data[[start_date_var]] <- lubridate::parse_date_time(data[[start_date_var]], date_orders)
+    if (!assertthat::is.date(data[[start_date_var]])) {
 
-    if (!is.null(end_date_var)) {
+      data[[start_date_var]] <-
+        lubridate::parse_date_time(data[[start_date_var]], date_orders)
 
-      data[[end_date_var]] <- lubridate::parse_date_time(data[[end_date_var]], date_orders)
+    }
 
-    } else {
+    if (!is.null(end_date_var) &&
+        !assertthat::is.date(data[[end_date_var]])) {
 
+      data[[end_date_var]] <-
+        lubridate::parse_date_time(data[[end_date_var]], date_orders)
+
+    }
+
+
+    # If only start date supplied, end date is same
+    if (is.null(end_date_var)) {
       end_date_var <- "end_date"
       data[[end_date_var]] <- data[[start_date_var]]
 
     }
 
+
+    # First and last dates should also be dates
+    # They should also default to min and max possible
+
     if (is.na(first_date)) {
 
       first_date = min(data[[start_date_var]])
 
-    } else {
+    } else if (!assertthat::is.date(first_date)) {
 
       first_date = lubridate::parse_date_time(first_date, orders = date_orders)
 
@@ -97,15 +116,18 @@ make_graph_df <- function(data,
 
       last_date = max(data[[end_date_var]])
 
-    } else {
+    } else if(!assertthat::is.date(last_date)) {
 
       last_date = lubridate::parse_date_time(last_date, orders = date_orders)
 
     }
 
-    drop <- drop | data[[end_date_var]] < first_date | data[[start_date_var]] > last_date
+    drop <-
+      drop |
+      data[[end_date_var]] < first_date |
+      data[[start_date_var]] > last_date
 
-  }
+  } # if start date given
 
   # Aaand, drop 'em
   data <- data[!drop, ]

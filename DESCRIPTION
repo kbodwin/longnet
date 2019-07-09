@@ -22,6 +22,7 @@ Imports:
     lubridate,
     tidyr,
     magrittr,
-    purrr
+    purrr,
+    assertthat
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 6.1.1
