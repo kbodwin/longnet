@@ -1,0 +1,12 @@
+name: Centralities_Instituions
+title: Centralities_Instituions
+username:
+account: polish-round-table-network
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1020413
+bundleId: 2216155
+url: https://polish-round-table-network.shinyapps.io/Centralities_Instituions/
+when: 1562708446.4483
+asMultiple: FALSE
+asStatic: FALSE

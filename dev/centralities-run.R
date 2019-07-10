@@ -1,3 +1,5 @@
+library(tidyverse)
+
 dat <- read_csv("./data/Full_Data.csv")
 IA_meta <- read_csv("./data/IA_Meta.csv")
 

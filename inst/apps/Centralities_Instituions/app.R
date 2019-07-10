@@ -9,14 +9,11 @@ library(tidyr)
 library(shinyWidgets)
 library(shinythemes)
 library(rlang)
+library(scales)
 
 # Some prep
 
-dat <- read_csv("/Users/kelly/Dropbox/longnet/data/Full_Data.csv")
-IA_info <- read_csv("/Users/kelly/Dropbox/longnet/data/IA_Meta.csv")
-Mem_info <- read_csv("/Users/kelly/Dropbox/longnet/data/Member_Meta.csv")
-
-centralities <- read.csv("/Users/kelly/Dropbox/longnet/data/IA_Centralities.csv", stringsAsFactors = FALSE) # %>%
+centralities <- read.csv("https://www.dropbox.com/s/8aeuvh34w7v3et4/IA_Centralities.csv?dl=1", stringsAsFactors = FALSE) # %>%
   # mutate(
   #   Degree = Degree - Self_Degree
   # )
@@ -96,13 +93,16 @@ shinyApp(
 
     output$single_day_plot <- renderPlot({
 
-      # Consistent colors
+      # Consistent colors and positions
       centralities %>%
         filter(Date == ymd(my_date())) %>%
+        drop_na(!!sym(input$groups)) %>%
         group_by(!!sym(input$groups)) %>%
         summarize(`Centrality Measure` = sum(!!sym(input$metric1))) %>%
         ggplot(aes(x = !!sym(input$groups), y = `Centrality Measure`, fill = !!sym(input$groups))) +
-        geom_col() + theme(legend.position = "none")
+        geom_col() +
+        theme(legend.position = "none",
+              axis.text.x = element_text(angle = 90))
 
     })
 
@@ -112,11 +112,14 @@ shinyApp(
         # prettier x-axis
         centralities %>%
           filter(IA.Name %in% input$institutions) %>%
+          mutate(
+            Date = ymd(Date)
+          ) %>%
           ggplot(aes(x = Date, y = !!sym(input$metric2), color = IA.Name)) +
           geom_line() +
-          (scale_x_date(limits=start.end,
-                        breaks=date_breaks("1 year"),
-                        labels=date_format("%b %y")))
+          scale_x_date(breaks=date_breaks("1 year"),
+                        labels=date_format("%b %y")) +
+          theme(axis.text.x = element_text(angle = 90))
 
       })
   }

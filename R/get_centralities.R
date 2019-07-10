@@ -1,26 +1,26 @@
 library(lubridate)
 library(purrr)
 
-
-# testing only
-library(readr)
-
-data <- read_csv("./data/Full_Data.csv")
-node_meta <- read_csv("./data/IA_Meta.csv")
-
-node_var = "IA.ID"
-edge_var = "Member.ID"
-start_date_var = "Start.Date"
-end_date_var = "End.Date"
-first_date = "1970-01-01"
-last_date = NA
-date_orders = "ymd"
-node_labels = "IA.Name"
-edge_labels = "Full.Name"
-# node_remove = NULL
-edge_remove = NULL
-date_today = ymd("1970-01-01")
-which_nodes = unique(data$IA.ID)
+#
+# # testing only
+# library(readr)
+#
+# data <- read_csv("./data/Full_Data.csv")
+# node_meta <- read_csv("./data/IA_Meta.csv")
+#
+# node_var = "IA.ID"
+# edge_var = "Member.ID"
+# start_date_var = "Start.Date"
+# end_date_var = "End.Date"
+# start_date = "1970-01-01"
+# end_date = "1970-12-01"
+# date_orders = "ymd"
+# node_labels = "IA.Name"
+# edge_labels = "Full.Name"
+# # node_remove = NULL
+# edge_remove = NULL
+# date_today = ymd("1970-01-01")
+# which_nodes = unique(data$IA.ID)
 
 
 get_centralities <- function(data,
@@ -77,8 +77,8 @@ get_centralities <- function(data,
       ~ get_centralities_today(data,
                            node_var, edge_var,
                            start_date_var, end_date_var,
-                           start_date  = .x,
-                           end_date = .x + months(1)
+                           start_date  = ymd(.x),
+                           end_date = ymd(.x) + months(1)
       )
     )
 
@@ -98,26 +98,48 @@ get_centralities_today <- function(data,
                             start_date_var, end_date_var,
                             start_date, end_date)
 
+  if (nrow(my_graph_df) == 0) {
+
+    return(NULL)
+
+  }
 
   my_graph <- graph_from_data_frame(my_graph_df)
 
-  my_betweenness <- estimate_betweenness(my_graph,
-                                         cutoff = 0)
-
-  my_degree <- degree(my_graph)
-
+  my_degree <- degree(my_graph, loops = FALSE) %>%
+    bind_rows() %>%
+    gather(key = nodes, value = Degree)
 
 
-  my_membership <- map_dbl(names(my_betweenness),
+  my_betweenness <- betweenness(my_graph, directed = FALSE) %>%
+    bind_rows() %>%
+    gather(key = nodes, value = Betweenness)
+
+  my_membership <- map_dbl(my_degree$nodes,
                            ~get_membership_count(my_graph_df, .x)
                     )
 
+  if (ncol(my_betweenness) == 0) {
 
-  my_return_df <- data.frame(cbind(names(my_betweenness), my_betweenness, my_degree, my_degree))
+    my_return_df <- my_degree %>%
+      mutate(
+        Betweenness = 0,
+        Self_Degree = my_membership,
+        Date = start_date
+      )
 
-  names(my_return_df) <- c(node_var, "Betweenness", "Degree", "Self_Degree")
+  } else {
 
-  my_return_df$Date = rep(start_date, nrow(my_return_df))
+    my_return_df <- full_join(my_degree, my_betweenness) %>%
+      mutate(
+        Self_Degree = my_membership,
+        Date = start_date
+      )
+
+  }
+
+
+  names(my_return_df) <- c(node_var, "Degree", "Betweenness", "Self_Degree", "Date")
 
 
   return(my_return_df)

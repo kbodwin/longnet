@@ -1,6 +1,7 @@
 library(ggraph)
 
 dat <- read_csv("./Data/Full_Data.csv")
+IA_info <- read_csv("/Users/kelly/Dropbox/longnet/data/IA_Meta.csv")
 
 bob <- make_graph_df(dat,
                   node_var = "IA.ID",
@@ -9,12 +10,12 @@ bob <- make_graph_df(dat,
                   end_date_var = "End.Date",
                   first_date = "1970-01-01",
                   last_date = "1970-01-01",
-                  edge_labels = "Full.Name",
-                  node_labels = "IA.Name")
+                  edge_labels = "Full.Name")
 
 
 prev_layout <- create_layout(graph_from_data_frame(bob), layout = "igraph", algorithm = "kk")
 
+node_layout <- prev_layout %>% left_join(IA_info, by = c("name" = "IA.ID"))
 start <- proc.time()
 
 my_nodes <- unique(dat$IA.ID)

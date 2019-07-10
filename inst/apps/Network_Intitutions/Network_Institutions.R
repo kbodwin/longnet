@@ -15,29 +15,30 @@ library(shinyWidgets)
 Sys.setlocale("LC_ALL", "Polish")
 
 
-# Function to get current selection from input
-getEvent <- function(input, current_selection){
-  #print(input)
-  if (is.null(input))
-    input <- "None"
-
-  observeEvent(input, {
-    current_selection(input)
-  })
-}
+# # Function to get current selection from input
+# getEvent <- function(input, current_selection){
+#   #print(input)
+#   if (is.null(input))
+#     input <- "None"
+#
+#   observeEvent(input, {
+#     current_selection(input)
+#   })
+# }
 
 
 
 # Some prep
 
-dat <- read_csv("/Users/kelly/Dropbox/longnet/data/Full_Data.csv")
-IA_info <- read_csv("/Users/kelly/Dropbox/longnet/data/IA_Meta.csv")
-Mem_info <- read_csv("/Users/kelly/Dropbox/longnet/data/Member_Meta.csv")
+dat <- read_csv("https://www.dropbox.com/s/nvh1mi91djp53me/Full_Data.csv?dl=1")
+IA_info <- read_csv("https://www.dropbox.com/s/gl461tqg6li1awb/IA_Meta.csv?dl=1")
+Mem_info <- read_csv("https://www.dropbox.com/s/dyjby6p55mrikrv/Member_Meta.csv?dl=1")
 
 node_choices <- c(IA_info$IA.ID)
 names(node_choices) <- c(IA_info$IA.Name)
 
 group_choices <- c(unique(as.character(IA_info$Type)))
+group_choices <- group_choices[!is.na(group_choices)]
 grouping_var <- "Type"
 
 network_type <- "kk"
@@ -116,24 +117,40 @@ ui <- pageWithSidebar(
   headerPanel("Connections between Polish institutions"),
 
   sidebarPanel(
-    radioButtons('Day',
-                 'Day',
-                 choices = c(
-                   "Start of Month" = 01,
-                   "Mid Month" = 15
-                   )
-    ),
-
-    sliderInput('Month',
+    h3("Choose a Date"),
+    div(style="display: inline-block;vertical-align:top; width: 150px;",
+        selectInput('month1',
                 'Month',
-                value = 1,
-                min = 1, max = 12),
-
-    sliderInput('Year',
+                choices = 1:12,
+                selected = 1
+    )),
+    div(style="display: inline-block;vertical-align:top; width: 150px;",
+        selectInput('day1',
+                'Day',
+                choices = 1:31,
+                selected = 1
+    )),
+    sliderInput('year1',
                 'Year',
                 value = 1979,
                 min = 1945, max = 1989,
                 sep = ""),
+    # h3("End of Date Range"),
+    # selectInput('month2',
+    #             'Month',
+    #             choices = 1:12
+    # ),
+    # selectInput('day2',
+    #             'Day',
+    #             choices = 1:31
+    # ),
+    # sliderInput('year2',
+    #             'Year',
+    #             value = 1979,
+    #             min = 1945, max = 1989,
+    #             sep = ""),
+
+    h3("Color Highlighting"),
 
     # Highlight a node
     pickerInput('node_highlight',
@@ -162,12 +179,20 @@ ui <- pageWithSidebar(
                    "City" = "City")
     ),
 
+    h3("Aesthetics"),
 
     # Selecting edge transparency
     sliderInput('edge_transparency',
-                'Edge transparency',
+                'Edge Transparency',
                 value = 1,
                 min = 0, max = 1),
+
+    sliderInput('node_size',
+                "Node Size",
+                value = 10,
+                min = 0, max = 30),
+
+    h3("Omit Nodes or Edges"),
 
     # Removing a node
     pickerInput('node_remove',
@@ -208,6 +233,8 @@ server <- function(input, output, session) {
   #   print(input$color_by_group)
   # })
 
+  output$text <- renderText(toString(input$group_highlight))
+
   # Create reactiveVal to retain previously selected values
   cur_type <- reactiveVal(NULL)
   cur_group <- reactiveVal(NULL)
@@ -218,17 +245,21 @@ server <- function(input, output, session) {
 
   #### Get Selected Dates ####
   first_date <- reactive({
-    get_date(input$Year, input$Month, input$Day)
+    get_date(input$year1, input$month1, input$day1)
   })
+
+  last_date <- reactive({
+    get_date(input$year1, input$month1, input$day1)
+  })
+
 
   #### Make Graph ####
   my_graph <- reactive({
     make_graph_df(dat,
                "IA.ID", "Member.ID",
                "Start.Date", "End.Date",
-               first_date(), first_date(),
+               first_date(), last_date(),
                date_orders = "ymd",
-               node_labels = node_labels,
                edge_labels = edge_labels,
                node_remove = input$node_remove,
                edge_remove = input$edge_remove)
@@ -242,7 +273,8 @@ server <- function(input, output, session) {
                   node_meta = IA_info,
                   node_var = node_var,
                   prev_layout = prev_layout,
-                  algorithm = network_type)
+                  algorithm = network_type) %>%
+      left_join(IA_info)
   })
 
   observeEvent(my_layout(),
@@ -255,6 +287,7 @@ server <- function(input, output, session) {
   node_cols <- reactive({
     make_node_cols(my_layout(),
                    node_var,
+                   group_var = "Type",
                    grouping_var = input$color_by_group,
                    color_all_groups = input$color_by_group != "None",
                    highlight_groups = input$group_highlight,
@@ -278,7 +311,8 @@ server <- function(input, output, session) {
                       node_cols = node_cols(),
                       edge_cols = edge_cols(),
                       weighted_edges = TRUE,
-                      edge_transparency = input$edge_transparency)
+                      edge_transparency = input$edge_transparency,
+                      node_size = input$node_size)
 
   })
 
