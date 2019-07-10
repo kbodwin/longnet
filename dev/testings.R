@@ -8,12 +8,22 @@ bob <- make_graph_df(dat,
                   edge_var = "Member.ID",
                   start_date_var = "Start.Date",
                   end_date_var = "End.Date",
-                  first_date = "1970-01-01",
-                  last_date = "1970-01-01",
-                  edge_labels = "Full.Name")
+                  first_date = "1979-01-01",
+                  last_date = "1979-01-01",
+                  edge_labels = "Full.Name",
+                  get_edge_names = TRUE)
 
 
-prev_layout <- create_layout(graph_from_data_frame(bob), layout = "igraph", algorithm = "kk")
+prev_layout <- create_layout(graph_from_data_frame(bob), layout = "igraph", algorithm = "kk") %>%
+  left_join(IA_info, by = c("name" = "IA.ID"), keep = TRUE) %>%
+  mutate(
+    IA.ID = name
+  )
+
+make_network_plot(bob, prev_layout, "1979-01-01",
+                  "IA.ID", "IA.Name",
+                  weighted_edges = TRUE,
+                  edge_transparency = NULL, node_size = 10)
 
 node_layout <- prev_layout %>% left_join(IA_info, by = c("name" = "IA.ID"))
 start <- proc.time()

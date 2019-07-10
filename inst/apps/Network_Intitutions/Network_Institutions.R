@@ -7,6 +7,9 @@ library(ggraph)
 library(plotly)
 library(tidyr)
 library(shinyWidgets)
+library(devtools)
+#devtools::install_github("kbodwin/longnet")
+#library(longnet)
 #library(graphlayouts)
 
 # Link to shiny app:
@@ -34,6 +37,10 @@ dat <- read_csv("https://www.dropbox.com/s/nvh1mi91djp53me/Full_Data.csv?dl=1")
 IA_info <- read_csv("https://www.dropbox.com/s/gl461tqg6li1awb/IA_Meta.csv?dl=1")
 Mem_info <- read_csv("https://www.dropbox.com/s/dyjby6p55mrikrv/Member_Meta.csv?dl=1")
 
+# dat <- read_csv("/Users/kelly/Dropbox/longnet/data/Full_Data.csv")
+# IA_info <- read_csv("/Users/kelly/Dropbox/longnet/data/IA_Meta.csv")
+# Mem_info <- read_csv("/Users/kelly/Dropbox/longnet/data/Member_Meta.csv")
+
 node_choices <- c(IA_info$IA.ID)
 names(node_choices) <- c(IA_info$IA.Name)
 
@@ -48,68 +55,7 @@ node_labels <- "IA.Name"
 edge_var <- "Member.ID"
 edge_labels <- "Full.Name"
 
-#   %>%
-#     # This add_annotations is not exactly the feature we want, but the best I can do
-#     add_annotations(x = ~n_x,
-#                     y = ~n_y,
-#                     text = L$IA.Name,
-#                     visible = FALSE,
-#                     showarrow = TRUE,
-#                     clicktoshow = "onoff",
-#                     font = list(size = "11"))
-#
-#   if (length(diff_id_index) != 0){
-#     network <- network %>%
-#       add_trace(x = ~x_ave, y = ~y_ave,
-#                 type = "scatter",
-#                 mode = "markers",
-#                 marker = list(color = "white", size = 0, opacity = 0),
-#                 text = paste(text_edge),
-#                 hoverinfo = "text",
-#                 showlegend = FALSE)
-#   }
-#
-#   ####################### Lower priority
-#
-#   # Hover option on edges
-#   ## Hover text shows members shared by those institutions
-#
-#   #######################
-#
-#
-#   axis <- list(title = "", showgrid = FALSE, showticklabels = FALSE, zeroline = FALSE)
-#
-#   edge_shapes <- list()
-#
-#
-#   for(i in 1:length(es$V1)) {
-#     v0_idx <- which(L$name == es[i,]$V1)
-#     v1_idx <- which(L$name == es[i,]$V2)
-#
-#     edge_shape = list(
-#       type = "line",
-#       line = list(color = edge_cols[i], width = 1),
-#       opacity = edge_transparency,
-#       x0 = n_x[v0_idx],
-#       y0 = n_y[v0_idx],
-#       x1 = n_x[v1_idx],
-#       y1 = n_y[v1_idx]
-#     )
-#
-#     edge_shapes[[i]] <- edge_shape
-#   }
-#
-#
-#   layout(
-#     network,
-#     title = date,
-#     shapes = edge_shapes,
-#     xaxis = axis,
-#     yaxis = axis
-#   )
-#
-#
-# }
+
 
 # Define UI for application
 ui <- pageWithSidebar(
@@ -262,7 +208,8 @@ server <- function(input, output, session) {
                date_orders = "ymd",
                edge_labels = edge_labels,
                node_remove = input$node_remove,
-               edge_remove = input$edge_remove)
+               edge_remove = input$edge_remove,
+               get_edge_names = TRUE)
   })
 
   #### Calculate layout ####
@@ -274,7 +221,7 @@ server <- function(input, output, session) {
                   node_var = node_var,
                   prev_layout = prev_layout,
                   algorithm = network_type) %>%
-      left_join(IA_info)
+      left_join(IA_info, keep = TRUE)
   })
 
   observeEvent(my_layout(),
@@ -286,7 +233,7 @@ server <- function(input, output, session) {
 
   node_cols <- reactive({
     make_node_cols(my_layout(),
-                   node_var,
+                   node_var = node_var,
                    group_var = "Type",
                    grouping_var = input$color_by_group,
                    color_all_groups = input$color_by_group != "None",
@@ -307,6 +254,7 @@ server <- function(input, output, session) {
     make_network_plot(my_graph(),
                       my_layout(),
                       first_date(),
+                      node_var = node_var,
                       node_label_var = node_labels,
                       node_cols = node_cols(),
                       edge_cols = edge_cols(),

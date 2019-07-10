@@ -1,0 +1,12 @@
+name: Network_Intitutions
+title: Network_Intitutions
+username:
+account: polish-round-table-network
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1020918
+bundleId: 2219056
+url: https://polish-round-table-network.shinyapps.io/Network_Intitutions/
+when: 1562777772.70683
+asMultiple: FALSE
+asStatic: FALSE
