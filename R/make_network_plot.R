@@ -1,13 +1,13 @@
 ## Testing
-edge_info = bob
-node_layout = prev_layout
-date_string = "1970-01-01"
-node_label_var = "IA.Name"
-node_var = "IA.ID"
-node_cols = rep("#619CFF", nrow(node_layout))
-edge_cols = rep("black", nrow(edge_info))
-edge_transparency = NULL
-node_size = 10
+# edge_info = bob
+# node_layout = prev_layout
+# date_string = "1970-01-01"
+# node_label_var = "IA.Name"
+# node_var = "IA.ID"
+# node_cols = rep("#619CFF", nrow(node_layout))
+# edge_cols = rep("black", nrow(edge_info))
+# edge_transparency = NULL
+# node_size = 10
 
 
 make_network_plot <- function(edge_info, node_layout, date_string,

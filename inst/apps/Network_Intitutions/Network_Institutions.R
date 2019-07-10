@@ -8,7 +8,7 @@ library(plotly)
 library(tidyr)
 library(shinyWidgets)
 library(devtools)
-#devtools::install_github("kbodwin/longnet")
+devtools::install_github("kbodwin/longnet")
 #library(longnet)
 #library(graphlayouts)
 
