@@ -1,3 +1,8 @@
+### TO do:
+# Color by institution affiliation
+# check on color_by_group; NAs are bad?
+# edge coloring doesn't work
+
 library(shiny)
 library(tidyverse)
 library(lubridate)
@@ -7,384 +12,303 @@ library(ggraph)
 library(plotly)
 library(tidyr)
 library(shinyWidgets)
-library(graphlayouts)
+library(devtools)
+#devtools::install_github("kbodwin/longnet")
+library(longnet)
+#library(graphlayouts)
 
-# Link to shiny app: https://hayate.shinyapps.io/IA_Network/
+# Link to shiny app:
 
 # For whatever reason, this is what allows Polish characters to display
-#Sys.setlocale('LC_ALL','C')
 Sys.setlocale("LC_ALL", "Polish")
 
-#dat <- read_csv("https://www.dropbox.com/s/gl0twbp7ek7vw38/Network_Dates.csv?dl=1") %>% na.omit()
-#IA_info <- read_csv("https://www.dropbox.com/s/t81y5j8gpg5rw2s/IA_Meta.csv?dl=1") %>% drop_na(IA.Name)
 
-dat <- read_csv("https://www.dropbox.com/s/rqb1416klep2evs/Network_Member.csv?dl=1") %>% na.omit()
-Member_info <- read_csv("https://www.dropbox.com/s/hxrqamlpx5epwhe/Member_Meta.csv?dl=1") %>% drop_na(Full.Name) %>% unique()
-
-# Function to generate ggplot colors (Original hcl: hues, 65 ,100)
-ggcolors <- function(n){
-  hues = seq(15, 375, length = n+2)
-  hcl(h = hues, l = 65, c = 100)[2:(n+1)]
-}
-
-# Function to get a Date value
-getDate <- function(year, month, day){
-  as.Date(paste(year, month, day, sep = "-"))
-}
-
-# Function to filter out IA.ID given the date
-getNewData <- function(date){
-  dat %>% filter(mdy(Start.Date) <= ymd(date), mdy(End.Date) >= ymd(date)) %>%
-    select(Member.ID)
-}
-
-# Function to get shared member ID of both institutions
-getMember <- function(member1, member2, date){
-  dat1 <- dat %>% filter(mdy(Start.Date) <= ymd(date), mdy(End.Date) >= ymd(date)) %>%
-    filter(Member.ID %in% member1) %>% select(IA.Name)
-  dat2 <- dat %>% filter(mdy(Start.Date) <= ymd(date), mdy(End.Date) >= ymd(date)) %>%
-    filter(Member.ID %in% member2) %>% select(IA.Name)
-  #print(dat1)
-  #print(dat2)
-  intersect(dat1$IA.Name, dat2$IA.Name)
-}
-
-# Function to get current selection from input
-getEvent <- function(input, current_selection){
-  #print(input)
-  if (is.null(input))
-    input <- "None"
-  
-  observeEvent(input, {
-    current_selection(input)
-  })
-}
+# # Function to get current selection from input
+# getEvent <- function(input, current_selection){
+#   #print(input)
+#   if (is.null(input))
+#     input <- "None"
+#
+#   observeEvent(input, {
+#     current_selection(input)
+#   })
+# }
 
 
-make_indiv_network <- function(date, 
-                               node_highlight = NA, 
-                               gender_highlight = NA,
-                               prof_highlight = NA,
-                               edge_transparency = 1,
-                               node_remove = NA,
-                               group_sub = NA, 
-                               layout_type = "kk"){
-  # print(gender_highlight)
-  
-  # Determine which nodes to narrow down to
-  if(is.na(group_sub)){
-    keep_nodes <- Member_info %>%
-      filter(Full.Name != node_remove) %>%
-      select(Member.ID) %>% unlist()
-  } else{
-    keep_nodes <- Member_info %>%
-      filter(Full.Name != node_remove) %>%
-      filter(Profession == group_sub) %>%
-      select(Member.ID) %>% unlist()
-  }
-  
-  # Make graph from counting co-membership
-  my_graph <- dat %>% 
-    filter(Member.ID %in% keep_nodes) %>%
-    filter(mdy(Start.Date) <= ymd(date), mdy(End.Date) >= ymd(date)) %>%
-    select(Member.ID, IA.ID) %>%
-    group_by(Member.ID) %>%
-    table() %>%
-    as.matrix %>%
-    tcrossprod() %>%
-    graph.adjacency(weighted = TRUE)
-  
-  
-  # Find layout info
-  L <- create_layout(my_graph, layout = layout_type)
-  #draw_circle(use = "focus",max.circle = 3)
-  
-  L$name <- as.integer(as.character(L$name))
-  
-  # Attach relevant node info
-  L <- L %>% left_join(Member_info, by = c("name" = "Member.ID"))
-  
-  # Raw locations of nodes
-  n_x <- L$x
-  n_y <- L$y
-  
-  # Edge information
-  es <- as.data.frame(get.edgelist(my_graph))
-  
-  # Size of network
-  n_node <- nrow(L)
-  n_edge <- nrow(es)
-  
-  # Default edge cols
-  edge_cols <- rep("black", n_edge)
-  
-  # Set default node color (blue)
-  node_cols <- rep("#619CFF", n_node)
-  
-  # Vector of Institution Type as number
-  # Shiny app treats NA as "", that's why we need to make NA from data becomes empty string
-  #L$Type[is.na(L$Type)] <- ""
-  gender_as_num <- as.numeric(factor(L$Gender))
 
-  # Get vector of color representing each gender
-  color <- ggcolors(2)[gender_as_num]
+# Some prep
 
-  # Different node color for the type chosen.
-  # Avoid having the same #619CFF color
-  #print(gender_highlight)
-  color[color == "#619CFF"] <- "red"
-  node_cols[L$Gender %in% gender_highlight] <- color[L$Gender %in% gender_highlight]
-
-  #print(paste("Color:", color))
-  #print(node_cols)
-
-  # Highlight member's profession
-  node_cols[L$Profession == prof_highlight] <- "red"
-
-  # Highlight edges from chosen nodes
-  id_highlight <- L$name[L$Profession == prof_highlight]
-
-  edge_cols[which(es$V1 %in% id_highlight)] <- "red"
-  edge_cols[which(es$V2 %in% id_highlight)] <- "red"
-
-  #print(paste("Node hl before: ", node_highlight))
-
-  # Highlight individual nodes and edges
-  node_cols[match(node_highlight, L$Full.Name)] <- "green"
-  id_node_hl <- L$name[match(node_highlight, L$Full.Name)]
-
-  #print(paste("id: ", id_node_hl))
-  #print(which(es$V2 %in% id_node_hl))
-  edge_cols[which(es$V1 %in% id_node_hl)] <- "green"
-  edge_cols[which(es$V2 %in% id_node_hl)] <- "green"
-  #print(edge_cols)
-  
-  ######################
-  # Display IAs on edge that are shared by both members
-  ######################
-  diff_id_index <- which(es$V1 != es$V2)
-  id_1 <- es$V1[diff_id_index]
-  id_2 <- es$V2[diff_id_index]
-
-  # If there is any edges, we will calculate and display shared IAs on edges
-  if (length(diff_id_index) != 0){
-    # Vectors to keep xy-coordinates of points between connected institutions
-    x_ave <- c()
-    y_ave <- c()
-    text_edge <- list()
-
-    for (i in 1:length(id_1)){
-      # Calculate the x-coordinate between 2 connected points.
-      x_ave[i] =  ave(c(L$x[L$name == id_1[i]], L$x[L$name == id_2[i]]))[1]
-    }
-
-    for (i in 1:length(id_1)){
-      # Calculate the y-coordinate between 2 connected points.
-      y_ave[i] =  ave(c(L$y[L$name == id_1[i]], L$y[L$name == id_2[i]]))[1]
-    }
-
-    for (i in 1:length(id_1)){
-      # Get shared members
-      text_edge[[i]] <- getMember(id_1[i], id_2[i], date)
-
-      #print(text_edge[[i]])
-      # If there are more than 1 shared members, we need to parse the members into 1 string
-      # Because add_trace method can't display a vector in 1 text
-      if (length(text_edge[[i]]) > 1){
-        text_edge[[i]] <- paste(text_edge[[i]], collapse = '\n')
-      }
-
-      #text_edge[[6]] <- paste(text_edge[[6]], collapse = ', ')
-    }
-  }
-  
-  ###########################
-  network <- plot_ly(x = ~n_x, 
-                     y = ~n_y, 
-                     type = "scatter",
-                     mode = "markers", 
-                     marker = list(color = node_cols, size = 10),
-                     text = L$Full.Name, 
-                     hoverinfo = "text",
-                     width = 700, height = 600) %>%
-    # This add_annotations is not exactly the feature we want, but the best I can do
-    add_annotations(x = ~n_x,
-                    y = ~n_y,
-                    text = L$Full.Name,
-                    visible = FALSE,
-                    showarrow = TRUE,
-                    clicktoshow = "onoff",
-                    font = list(size = "11"))
-  
-  if (length(diff_id_index) != 0){
-    network <- network %>%
-      add_trace(x = ~x_ave, y = ~y_ave,
-                type = "scatter",
-                mode = "markers",
-                marker = list(color = "white", size = 0, opacity = 0),
-                text = paste(text_edge),
-                hoverinfo = "text",
-                showlegend = FALSE)
-  }
-  # 
-  axis <- list(title = "", showgrid = FALSE, showticklabels = FALSE, zeroline = FALSE)
-  
-  edge_shapes <- list()
-  
-  
-  for(i in 1:length(es$V1)) {
-    v0_idx <- which(L$name == es[i,]$V1)
-    v1_idx <- which(L$name == es[i,]$V2)
-    
-    edge_shape = list(
-      type = "line",
-      line = list(color = edge_cols[i], width = 1),
-      opacity = edge_transparency,
-      x0 = n_x[v0_idx],
-      y0 = n_y[v0_idx],
-      x1 = n_x[v1_idx],
-      y1 = n_y[v1_idx]
-    )
-    
-    edge_shapes[[i]] <- edge_shape
-  }
-  
-  
-  layout(
-    network,
-    title = date,
-    shapes = edge_shapes,
-    xaxis = axis,
-    yaxis = axis
+dat <- read_csv("https://www.dropbox.com/s/nvh1mi91djp53me/Full_Data.csv?dl=1")
+IA_info <- read_csv("https://www.dropbox.com/s/gl461tqg6li1awb/IA_Meta.csv?dl=1")
+Mem_info <- read_csv("https://www.dropbox.com/s/dyjby6p55mrikrv/Member_Meta.csv?dl=1") %>%
+  mutate(
+    Member.ID = as.character(Member.ID)
   )
-  
-}
+
+# dat <- read_csv("/Users/kelly/Dropbox/longnet/data/Full_Data.csv")
+# IA_info <- read_csv("/Users/kelly/Dropbox/longnet/data/IA_Meta.csv")
+# Mem_info <- read_csv("/Users/kelly/Dropbox/longnet/data/Member_Meta.csv")
+
+node_choices <- c(Mem_info$Member.ID)
+names(node_choices) <- c(Mem_info$Full.Name)
+
+group_choices <- c(unique(as.character(Mem_info$Profession)))
+group_choices <- group_choices[!is.na(group_choices)]
+grouping_var <- "Profession"
+
+network_type <- "kk"
+
+node_var <- "Member.ID"
+node_labels <- "Full.Name"
+edge_var <- "IA.ID"
+edge_labels <- "IA.Name"
+
+
 
 # Define UI for application
 ui <- pageWithSidebar(
-  
+
   headerPanel("Connections between Polish individuals"),
-  
+
   sidebarPanel(
-    radioButtons('Day', 'Day',
-                 choices = c(
-                   "Start of Month" = 01,
-                   "Mid Month" = 15)
-    ),
-    sliderInput('Month', 'Month', 1,
-                min = 1, max = 12),
-    sliderInput('Year', 'Year', 1957,
-                min = 1948, max = 1989),
-    
-    # selectInput('node_highlight', 'Highlight an institution',
-    #             choices = c("None", unique(as.character(IA_info$Full.Name)))
+    h3("Choose a Date"),
+    div(style="display: inline-block;vertical-align:top; width: 150px;",
+        selectInput('month1',
+                'Month',
+                choices = 1:12,
+                selected = 1
+    )),
+    div(style="display: inline-block;vertical-align:top; width: 150px;",
+        selectInput('day1',
+                'Day',
+                choices = 1:31,
+                selected = 1
+    )),
+    sliderInput('year1',
+                'Year',
+                value = 1979,
+                min = 1945, max = 1989,
+                sep = ""),
+    # h3("End of Date Range"),
+    # selectInput('month2',
+    #             'Month',
+    #             choices = 1:12
     # ),
-    
-    # Choosing between highlighting type or group
-    radioButtons('gender_prof', label = 'Highlight',
-                 choices = list("Gender" = 1, "Profession" = 2), 
-                 selected = 1),
-    
-    # selectInput appears for inputing type highlight
-    conditionalPanel(
-      condition = "input.gender_prof == 1",
-      # selectInput('gender_highlight', 'Highlight gender of member',
-      #             choices = c("None", unique(as.character(dat$Gender[!is.na(dat$Gender)])))
-      # )
-      
-      radioButtons('gender_highlight', label = 'Highlight gender of members',
-                   choices = list("None" = 1, "Male" = "M", "Female" = "F"), 
-                   selected = 1)
-      # pickerInput(inputId = "gender_highlight",
-      #             label = "Highlight gender of member",
-      #             choices = unique(as.character(IA_info$Type[!is.na(IA_info$Type)])),
-      #             options = list(`actions-box` = TRUE), multiple = T)
+    # selectInput('day2',
+    #             'Day',
+    #             choices = 1:31
+    # ),
+    # sliderInput('year2',
+    #             'Year',
+    #             value = 1979,
+    #             min = 1945, max = 1989,
+    #             sep = ""),
+
+    h3("Color Highlighting"),
+
+    # Highlight a node
+    pickerInput('node_highlight',
+                'Highlight Individuals(s)',
+                choices = node_choices,
+                options = list(`actions-box` = TRUE),
+                multiple = T
     ),
-    
-    # selectInput appears for inputing group highlight
-    conditionalPanel(
-      condition = "input.gender_prof == 2",
-      selectInput('prof_highlight', 'Highlight a profession of members', 
-                  choices = c("None", sort(unique(Member_info$Profession))))
+
+    # Highlight groups
+    pickerInput('group_highlight',
+                'Highlight Profession',
+                choices = group_choices,
+                options = list(`actions-box` = TRUE),
+                multiple = T
     ),
-    
-    # Highlight multiple individuals node
-    pickerInput(inputId = "node_highlight",
-                label = "Highlight individual member",
-                choices = sort(Member_info$Full.Name),
-                options = list(`actions-box` = TRUE), multiple = T),
-    
+
+    # Color groups
+    radioButtons('color_by_group',
+                 'Color nodes by:',
+                 choices = c(
+                   "None" = "None",
+                   "Profession" = "Profession",
+                   "Gender" = "Gender")
+    ),
+
+    h3("Aesthetics"),
+
     # Selecting edge transparency
-    sliderInput('edge', 'Edge transparency', value = 1,
+    sliderInput('edge_transparency',
+                'Edge Transparency',
+                value = 1,
                 min = 0, max = 1),
-    
+
+    sliderInput('node_size',
+                "Node Size",
+                value = 10,
+                min = 0, max = 30),
+
+    h3("Omit Nodes or Edges"),
+
     # Removing a node
-    selectInput('node_remove', 'Ignoring a member',
-                choices = c("None", sort(Member_info$Full.Name)))
-    
+    pickerInput('node_remove',
+                'Remove Node(s)',
+                choices = node_choices,
+                options = list(`actions-box` = TRUE),
+                multiple = T
+    ),
+
+    # Removing a member
+    pickerInput('edge_remove',
+                'Omit an Individual from Edge Calculation',
+                choices = c(IA_info$IA.Name),
+                options = list(`actions-box` = TRUE),
+                multiple = T
+    )
+
   ),
-  
+
   mainPanel(
-    plotlyOutput('plot1')
+    #textOutput('checking_vars'),
+    plotlyOutput('my_network')
     #textOutput("text")
   )
-  
+
 )
 
 
 server <- function(input, output, session) {
-  # create reactiveVal to retain previously selected values
-  # cur_gender <- reactiveVal(NULL)
-  # cur_prof <- reactiveVal(NULL)
-  # cur_highlight <- reactiveVal(NULL)
-  # 
-  # # Change values for input$type
-  # observe({
-  #   date <- getDate(input$Year, input$Month, input$Day)
-  #   newDat <- getNewData(date)
-  #   #print(newDat)
-  # 
-  #   newInfo <- Member_info %>% filter(Member.ID %in% newDat$Member.ID)
-  # 
-  #   getEvent(input$gender_highlight, cur_gender)
-  #   getEvent(input$prof_highlight, cur_prof)
-  #   getEvent(input$node_highlight, cur_highlight)
-  # 
-  #   if (input$gender_prof == 1 ){
-  #     #updateRadioButtons(session, 'gender_highlight', choices = unique(as.character(newInfo$Type)), selected = cur_gender())
-  #     #updateSelectInput(session, "gender_highlight", choices = c("None", unique(as.character(newInfo$Type))))
-  #     updateSelectInput(session, "prof_highlight", choices = "None" )
-  #   }
-  #   else{
-  #     updateRadioButtons(session, "gender_highlight", choices = "None", selected = "None")
-  #     updateSelectInput(session, "prof_highlight", choices = c("None", unique(as.character(newInfo$Profession))),
-  #                       selected = cur_prof())
-  #   }
-  # 
-  #   updatePickerInput(session, "node_highlight", choices = newInfo$Full.Name, selected = cur_highlight())
-  #   updateSelectInput(session, "node_remove", choices = c("None", newInfo$Full.Name))
+
+  # Day, Month, Year
+  # node_highlight, group_highlight, color_by_group
+  # edge_transparency, node_remove, edge_remove
+
+  # output$checking_vars <- renderText({
+  #   print(input$node_highlight)
+  #   print(input$group_highlight)
+  #   print(input$color_by_group)
   # })
 
-  # output$text <- renderText({
-  #   paste0("Check: .", input$node_highlight)
-  # })
-  #
-  
-  # Plotly
-  output$plot1 <- renderPlotly({
-    make_indiv_network(
-      date = paste(input$Year, input$Month, input$Day, sep = "-"),
-      node_highlight = input$node_highlight,
-      gender_highlight = input$gender_highlight,
-      prof_highlight = input$prof_highlight,
-      edge_transparency = input$edge,
-      node_remove = input$node_remove
-    )
+  output$text <- renderText(toString(input$group_highlight))
+
+  # Create reactiveVal to retain previously selected values
+  cur_type <- reactiveVal(NULL)
+  cur_group <- reactiveVal(NULL)
+  cur_highlight <- reactiveVal(NULL)
+
+  # Create reactive to retain previous graph for faster plotting
+  #prev_layout <- reactiveValues(x = 0, y = 0, name = "")
+
+  #### Get Selected Dates ####
+  first_date <- reactive({
+    get_date(input$year1, input$month1, input$day1)
   })
-  
+
+  last_date <- reactive({
+    get_date(input$year1, input$month1, input$day1)
+  })
+
+
+  #### Make Graph ####
+  my_graph <- reactive({
+    make_graph_df(dat,
+               "Member.ID", "IA.ID",
+               "Start.Date", "End.Date",
+               first_date(), last_date(),
+               date_orders = "ymd",
+               edge_labels = edge_labels,
+               node_remove = input$node_remove,
+               edge_remove = input$edge_remove,
+               get_edge_names = TRUE)
+  })
+
+  #### Calculate layout ####
+  prev_layout <- NULL
+
+  my_layout <- reactive({
+    get_layout_df(my_graph(),
+                  node_meta = Mem_info,
+                  node_var = node_var,
+                  prev_layout = prev_layout,
+                  algorithm = network_type) %>%
+      left_join(Mem_info, keep = TRUE)
+  })
+
+  observeEvent(my_layout(),
+               {
+                 prev_layout <- isolate(my_layout())
+               })
+
+  #### Set node and edge details ####
+
+  node_cols <- reactive({
+    make_node_cols(my_layout(),
+                   node_var = node_var,
+                   group_var = "Profession",
+                   grouping_var = input$color_by_group,
+                   color_all_groups = input$color_by_group != "None",
+                   highlight_groups = input$group_highlight,
+                   highlight_nodes = input$node_highlight)
+  })
+
+
+  edge_cols <- reactive({
+    make_edge_cols(my_graph(),
+                   highlight_nodes = input$node_highlight)
+  })
+
+  #### Plot it ####
+
+  output$my_network <- renderPlotly({
+
+    make_network_plot(my_graph(),
+                      my_layout(),
+                      first_date(),
+                      node_var = node_var,
+                      node_label_var = node_labels,
+                      node_cols = node_cols(),
+                      edge_cols = edge_cols(),
+                      weighted_edges = TRUE,
+                      edge_transparency = input$edge_transparency,
+                      node_size = input$node_size)
+
+  })
+
+
+  #### Update input options ####
+
+  # observe({
+  #
+  #   getEvent(input$group_highlight, cur_group)
+  #   getEvent(input$node_highlight, cur_highlight)
+  #
+  #   if (input$type_group == 1 ) {
+  #
+  #
+  #     updateSelectInput(session,
+  #                       "group_highlight",
+  #                       choices = "None")
+  #   } else {
+  #
+  #     updatePickerInput(session,
+  #                       "type_highlight",
+  #                       choices = "None")
+  #
+  #     updateSelectInput(session,
+  #                       "group_highlight",
+  #                       choices = group,
+  #                       selected = cur_group())
+  #   }
+  #
+  #   updatePickerInput(session,
+  #                     "node_highlight",
+  #                     choices = newInfo$IA.Name,
+  #                     selected = cur_highlight())
+  #
+  #   updateSelectInput(session,
+  #                     "node_remove",
+  #                     choices = c("None", newInfo$IA.Name))
+  # })
+
 }
 
-# Run the application 
+# Run the application
 shinyApp(ui = ui, server = server)
 
 

@@ -4,17 +4,19 @@ dat <- read_csv("./Data/Full_Data.csv")
 IA_info <- read_csv("/Users/kelly/Dropbox/longnet/data/IA_Meta.csv")
 
 bob <- make_graph_df(dat,
-                  node_var = "IA.ID",
-                  edge_var = "Member.ID",
+                  node_var = "Member.ID",
+                  edge_var = "IA.ID",
                   start_date_var = "Start.Date",
                   end_date_var = "End.Date",
                   first_date = "1979-01-01",
                   last_date = "1979-01-01",
-                  edge_labels = "Full.Name",
+                  edge_labels = "IA.Name",
                   get_edge_names = TRUE)
 
 
-prev_layout <- create_layout(graph_from_data_frame(bob), layout = "igraph", algorithm = "kk") %>%
+prev_layout <- create_layout(graph_from_data_frame(bob), layout = "igraph", algorithm = "kk")
+
+prev_layout %>%
   left_join(IA_info, by = c("name" = "IA.ID"), keep = TRUE) %>%
   mutate(
     IA.ID = name
